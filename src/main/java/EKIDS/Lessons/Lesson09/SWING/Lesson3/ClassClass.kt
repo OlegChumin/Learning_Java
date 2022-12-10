@@ -1,5 +1,8 @@
 package Java.Lessons.Lesson09.SWING.Lesson3
 
+import EKIDS.Lessons.Lesson09.SWING.Lesson3.Movable
+import EKIDS.Lessons.Lesson09.SWING.Lesson3.Rotate
+
 class ClassClass : Movable, Rotate {
     override fun move() {
         println("Машина может ехать")
