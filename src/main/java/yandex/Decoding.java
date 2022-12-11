@@ -2,7 +2,6 @@ package yandex;
 
 import java.util.Base64;
 
-import static com.sun.org.apache.xml.internal.security.utils.XMLUtils.encodeToString;
 
 public class Decoding {
     public static void main(String[] args) {

@@ -1,7 +1,5 @@
 package EKIDS.StudentsJava.Project;
 
-import Java.Projects.SnakeGame.GameField;
-import Java.Projects.SnakeGame.MainWindow;
 
 import javax.swing.*;
 

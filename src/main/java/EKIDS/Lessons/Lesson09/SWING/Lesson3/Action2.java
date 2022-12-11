@@ -30,7 +30,7 @@ public class Action2 extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
-        javax.swing.Action window = new Action();
+        Action2 window = new Action2();
     }
 
 
