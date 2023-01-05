@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<!--http://jakarta.apache.org/log4j/-->
+<log4j:configuration xmlns:log4j='https://logging.apache.org/log4j/2.x/'
+                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xsi:schemaLocation="https://logging.apache.org/log4j/2.x/ ">
+    <!-- appender - описатель приемника данных -->
+    <appender name="fileAppender" class="org.apache.log4j.RollingFileAppender"> <!--RollingFileAppender пишет частями-->
+        <param name="maxFileSize" value="500KB"/> <!--logfile_test.log.1--><!--logfile_test.log.2 ...-->
+        <param name="maxBackupIndex" value="10"/> <!--количество файлов-->
+        <param name="file" value="target/logfile_test.log"/> <!-- в этот файл пишутся логи-->
+        <layout class="org.apache.log4j.PatternLayout"> <!-- в каком формате и как выводить информацию в лог файл -->
+            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1} -%m%n"/>
+            <!-- выводится дата и время лога уровень логирования ...-->
+        </layout>
+    </appender>
+
+    <appender name="fileAppender2"
+              class="org.apache.log4j.RollingFileAppender"> <!--RollingFileAppender пишет частями-->
+        <param name="maxFileSize" value="500KB"/>
+        <param name="maxBackupIndex" value="10"/>
+        <param name="file" value="target/logfile_test2.log"/> <!-- в этот файл пишутся логи-->
+        <layout class="org.apache.log4j.PatternLayout"> <!-- в каком формате и как выводить информацию в лог файл -->
+            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1} -%m%n"/>
+        </layout>
+    </appender>
+
+    <category name="Logging">
+        <!--all, trace, debug, info, warn, error, fatal -->
+        <priority value="all"/>
+        <appender-ref ref="fileAppender"/>
+        <appender-ref ref="fileAppender2"/>
+    </category>
+
+</log4j:configuration>
+    
+
