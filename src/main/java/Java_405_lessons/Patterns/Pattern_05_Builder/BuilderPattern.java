@@ -1,44 +1,62 @@
 package Java_405_lessons.Patterns.Pattern_05_Builder;
 
 public class BuilderPattern {
+    public static void main(String[] args) {
+        NewPerson newPerson = new NewPersonBuilderImpl()
+                .setPersonName("Max")
+                .setPersonAge(22)
+                .setSalary(190_000.)
+                .build();
 
+        System.out.println(newPerson);
+    }
 }
 
-class Person {
+class NewPerson{
     String name;
     int age;
     double salary;
 
-    public Person(String name) {
-        this.name = name;
+    @Override
+    public String toString() {
+        return "NewPerson{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", salary=" + salary +
+                '}';
+    }
+}
+
+interface NewPersonBuilder{
+    NewPersonBuilder setPersonName(String name);
+    NewPersonBuilder setPersonAge(int age);
+    NewPersonBuilder setSalary(double salary);
+    NewPerson build();
+}
+
+class NewPersonBuilderImpl implements NewPersonBuilder{
+    NewPerson newPerson = new NewPerson();
+
+    @Override
+    public NewPersonBuilder setPersonName(String name) {
+        newPerson.name = name;
+        return this;
     }
 
-    public Person(int age) {
-        this.age = age;
+    @Override
+    public NewPersonBuilder setPersonAge(int age) {
+        newPerson.age =  age;
+        return this;
     }
 
-    public Person(double salary) {
-        this.salary = salary;
+    @Override
+    public NewPersonBuilder setSalary(double salary) {
+        newPerson.salary = salary;
+        return this;
     }
 
-    public Person(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-
-    public Person(String name, double salary) {
-        this.name = name;
-        this.salary = salary;
-    }
-
-    public Person(int age, double salary) {
-        this.age = age;
-        this.salary = salary;
-    }
-
-    public Person(String name, int age, double salary) {
-        this.name = name;
-        this.age = age;
-        this.salary = salary;
+    @Override
+    public NewPerson build() {
+        return newPerson;
     }
 }
