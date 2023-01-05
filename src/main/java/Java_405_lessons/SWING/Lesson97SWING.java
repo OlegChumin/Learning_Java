@@ -1,4 +1,4 @@
-package lessons405.SWING;
+package Java_405_lessons.SWING;
 
 import javax.swing.*;
 import java.awt.*;

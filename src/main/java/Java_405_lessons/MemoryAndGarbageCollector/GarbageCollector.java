@@ -1,4 +1,4 @@
-package lessons405.MemoryAndGarbageCollector;
+package Java_405_lessons.MemoryAndGarbageCollector;
 
 import java.util.Date;
 

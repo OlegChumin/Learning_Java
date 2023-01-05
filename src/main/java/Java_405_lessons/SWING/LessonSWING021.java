@@ -1,11 +1,11 @@
-package lessons405.SWING;
+package Java_405_lessons.SWING;
 
 import javax.swing.*;
 import java.awt.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class LessonSWING022 {
+public class LessonSWING021 {
     public static void main(String[] args) {
         JFrame window = getWindow();
         window.add(new NewComponent());
@@ -31,8 +31,16 @@ public class LessonSWING022 {
         @Override
         protected void paintComponent(Graphics g) {
             Graphics2D grObj = (Graphics2D) g;
-            Image image = new ImageIcon("images/burmese-kitten-clipart.png").getImage();
-            grObj.drawImage(image, 0, 0, null);
+            String urlStr = "https://e7.pngegg.com/pngimages/799/622/png-clipart-munchkin-cat-persian-cat-kitten-scottish-fold-cat-food-kitten-mammal-cat-like-mammal.png";
+            try {
+                URL url =  new URL(urlStr);
+                Image image = new ImageIcon(url).getImage();
+                grObj.drawImage(image, 0, 0, null);
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+                System.err.println("Изображение не найдено по ссылке: " + urlStr);
+            }
+
         }
     }
 }
