@@ -10,7 +10,7 @@ public class Stuff implements EmployeeBuilder {
     }
 
     @Override
-    public EmployeeBuilder setSurName(String surName) {
+    public EmployeeBuilder setEmployeeSurName(String surName) {
         employee.surName = surName;
         return this;
     }
@@ -35,6 +35,6 @@ public class Stuff implements EmployeeBuilder {
 
     @Override
     public EmployeeBuilder build() {
-        return null;
+        return this;
     }
 }

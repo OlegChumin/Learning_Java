@@ -7,7 +7,18 @@ public class Employee {
     int id;
     double salary;
 
-//    public Employee(String name, String surName, int age, double salary) {
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", surName='" + surName + '\'' +
+                ", age=" + age +
+                ", id=" + id +
+                ", salary=" + salary +
+                '}';
+    }
+
+    //    public Employee(String name, String surName, int age, double salary) {
 //        this.name = name;
 //        this.surName = surName;
 //        this.age = age;
