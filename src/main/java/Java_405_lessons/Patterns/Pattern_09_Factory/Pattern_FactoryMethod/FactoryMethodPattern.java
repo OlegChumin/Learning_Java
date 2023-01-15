@@ -1,4 +1,4 @@
-package Java_405_lessons.Patterns.Pattern_03_FactoryMethod;
+package Java_405_lessons.Patterns.Pattern_09_Factory.Pattern_FactoryMethod;
 
 // метод, который создает сам себя
 public class FactoryMethodPattern {

@@ -1,4 +1,4 @@
-package Java_405_lessons.Patterns.Pattern_02_AbstractFactory;
+package Java_405_lessons.Patterns.Pattern_09_Factory.Pattern_AbstractFactory;
 /**
  * Фабрика(фабрик).*/
 

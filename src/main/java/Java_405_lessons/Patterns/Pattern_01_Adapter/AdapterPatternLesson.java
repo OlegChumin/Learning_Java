@@ -1,4 +1,4 @@
-package Java_405_lessons.Patterns.Pattern_09_Adapter;
+package Java_405_lessons.Patterns.Pattern_01_Adapter;
 
 public class AdapterPatternLesson {
     public static void main(String[] args) {

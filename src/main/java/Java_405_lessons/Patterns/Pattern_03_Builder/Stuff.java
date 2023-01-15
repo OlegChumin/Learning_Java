@@ -1,4 +1,4 @@
-package Java_405_lessons.Patterns.Pattern_05_Builder;
+package Java_405_lessons.Patterns.Pattern_03_Builder;
 
 public class Stuff implements EmployeeBuilder {
     Employee employee = new Employee();
