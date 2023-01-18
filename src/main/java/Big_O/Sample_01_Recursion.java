@@ -18,7 +18,7 @@ public class Sample_01_Recursion {
         } else return n + sumOfSequence(n - 1);
     }
 
-    private static int sumOfPairNumbers(int n) { // O(N) line function
+    private static int sumOfPairNumbers(int n) { // O(N) line function even include O(1) upper limit is infinity  > O(N) + O(1)
         int sum = 0;
         for (int i = 0; i < n; i++) {
             sum += pairSum(i, i + 1);
