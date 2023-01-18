@@ -1,4 +1,4 @@
-package Java_405_lessons.Patterns.Pattern_04_Singleton;
+package Java_405_lessons.Patterns.Pattern_18_Singleton;
 
 // можно создать только один объект класса
 public class SingletonPattern {
