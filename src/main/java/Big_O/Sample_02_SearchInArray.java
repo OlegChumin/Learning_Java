@@ -10,81 +10,78 @@ import java.util.Random;
 import java.util.Timer;
 
 public class Sample_02_SearchInArray {
-    static long timeStart = 0;
-    static long timeEnd = 0;
 
     public static void main(String[] args) {
         List<Integer> arrayList = createArrayOfRandomIntegerNumbers(getArraySize());
         System.out.println(arrayList);
-
-        timeStart = fixTime();
-        System.out.println("searchMinMaxInArrayVariant_1 " + searchMinMaxInArrayVariant_1(arrayList));
-        timeEnd = fixTime();
-        System.out.println("searchMinMaxInArrayVariant_1 time work = " + mesureTimeRunOfMethod(timeStart, timeEnd) + "msec");
-
-        timeStart = 0;
-        timeEnd = 0;
-
-        timeStart = fixTime();
-        System.out.println("searchMinMaxInArrayVariant_2 " + searchMinMaxInArrayVariant_2(arrayList));
-        timeEnd = fixTime();
-        System.out.println("searchMinMaxInArrayVariant_2 time work = " + mesureTimeRunOfMethod(timeStart, timeEnd) + "msec");
+        System.out.println("searchMinMaxInArrayVariant_1 time work = " + mesureTimeRunOfMethod(new ArraysSearchMethods(), arrayList, Variants.ONE) + "msec");
+        System.out.println("searchMinMaxInArrayVariant_2 time work = " + mesureTimeRunOfMethod(new ArraysSearchMethods(), arrayList, Variants.TWO) + "msec");
     }
 
-    private static long mesureTimeRunOfMethod(long timeStart, long timeEnd) {
+    private static long mesureTimeRunOfMethod(ArraysSearchMethods arraysSearchMethods, List<Integer> list, Variants variants) {
+
+        long timeStart = System.currentTimeMillis();
+        if (variants == Variants.ONE) {
+            arraysSearchMethods.searchMinMaxInArrayVariant_1(list);
+        } else if (variants == Variants.TWO) {
+            arraysSearchMethods.searchMinMaxInArrayVariant_2(list);
+        }
+        long timeEnd = System.currentTimeMillis();
         return timeEnd - timeStart;
     }
 
-    private static long fixTime() {
-        return System.currentTimeMillis();
+    enum Variants {
+        ONE, TWO;
     }
 
+    static class ArraysSearchMethods {
 
-    private static PairOfMinAndMax searchMinMaxInArrayVariant_1(List<Integer> listOfIntegerNumbers) {
-        PairOfMinAndMax pairOfMinAndMax = new PairOfMinAndMax();
-        int min = 0;
-        int max = 0;
-        for (int i = 0; i < listOfIntegerNumbers.size() - 1; i++) {
-            if (listOfIntegerNumbers.get(i) <= listOfIntegerNumbers.get(i + 1)) {
-                min = listOfIntegerNumbers.get(i);
-            } else {
-                min = listOfIntegerNumbers.get(i + 1);
+        public PairOfMinAndMax searchMinMaxInArrayVariant_1(List<Integer> listOfIntegerNumbers) {
+            PairOfMinAndMax pairOfMinAndMax = new PairOfMinAndMax();
+            int min = 0;
+            int max = 0;
+            for (int i = 0; i < listOfIntegerNumbers.size() - 1; i++) {
+                if (listOfIntegerNumbers.get(i) <= listOfIntegerNumbers.get(i + 1)) {
+                    min = listOfIntegerNumbers.get(i);
+                } else {
+                    min = listOfIntegerNumbers.get(i + 1);
+                }
+                if (listOfIntegerNumbers.get(i) >= listOfIntegerNumbers.get(i + 1)) {
+                    max = listOfIntegerNumbers.get(i);
+                } else {
+                    max = listOfIntegerNumbers.get(i + 1);
+                }
             }
-            if (listOfIntegerNumbers.get(i) >= listOfIntegerNumbers.get(i + 1)) {
-                max = listOfIntegerNumbers.get(i);
-            } else {
-                max = listOfIntegerNumbers.get(i + 1);
-            }
-        }
-        pairOfMinAndMax.setMinValue(min);
-        pairOfMinAndMax.setMaxValue(max);
+            pairOfMinAndMax.setMinValue(min);
+            pairOfMinAndMax.setMaxValue(max);
 
-        return pairOfMinAndMax;
-    }
-
-    private static PairOfMinAndMax searchMinMaxInArrayVariant_2(List<Integer> listOfIntegerNumbers) {
-        PairOfMinAndMax pairOfMinAndMax = new PairOfMinAndMax();
-        int min = 0;
-        int max = 0;
-        for (int i = 0; i < listOfIntegerNumbers.size() - 1; i++) {
-            if (listOfIntegerNumbers.get(i) <= listOfIntegerNumbers.get(i + 1)) {
-                min = listOfIntegerNumbers.get(i);
-            } else {
-                min = listOfIntegerNumbers.get(i + 1);
-            }
+            return pairOfMinAndMax;
         }
 
-        for (int i = 0; i < listOfIntegerNumbers.size() - 1; i++) {
-            if (listOfIntegerNumbers.get(i) >= listOfIntegerNumbers.get(i + 1)) {
-                max = listOfIntegerNumbers.get(i);
-            } else {
-                max = listOfIntegerNumbers.get(i + 1);
+        public PairOfMinAndMax searchMinMaxInArrayVariant_2(List<Integer> listOfIntegerNumbers) {
+            PairOfMinAndMax pairOfMinAndMax = new PairOfMinAndMax();
+            int min = 0;
+            int max = 0;
+            for (int i = 0; i < listOfIntegerNumbers.size() - 1; i++) {
+                if (listOfIntegerNumbers.get(i) <= listOfIntegerNumbers.get(i + 1)) {
+                    min = listOfIntegerNumbers.get(i);
+                } else {
+                    min = listOfIntegerNumbers.get(i + 1);
+                }
             }
-        }
-        pairOfMinAndMax.setMinValue(min);
-        pairOfMinAndMax.setMaxValue(max);
 
-        return pairOfMinAndMax;
+            for (int i = 0; i < listOfIntegerNumbers.size() - 1; i++) {
+                if (listOfIntegerNumbers.get(i) >= listOfIntegerNumbers.get(i + 1)) {
+                    max = listOfIntegerNumbers.get(i);
+                } else {
+                    max = listOfIntegerNumbers.get(i + 1);
+                }
+            }
+            pairOfMinAndMax.setMinValue(min);
+            pairOfMinAndMax.setMaxValue(max);
+
+            return pairOfMinAndMax;
+        }
     }
 
     private static int getArraySize() {
