@@ -13,8 +13,8 @@ public class ProxyPatterLesson {
 //        reader1.read("Hello ");
 
         InvocationHandler invocationHandler = new ReaderInvocationHandler();
-        Object proxyInstance = Proxy.newProxyInstance(Main.class.getClassLoader(), new Class[] {Reader.class}, invocationHandler);
-        ((Reader) proxyInstance).read("Hello !");
+//        Object proxyInstance = Proxy.newProxyInstance(Main.class.getClassLoader(), new Class[] {Reader.class}, invocationHandler);
+//        ((Reader) proxyInstance).read("Hello !");
 
     }
 }
