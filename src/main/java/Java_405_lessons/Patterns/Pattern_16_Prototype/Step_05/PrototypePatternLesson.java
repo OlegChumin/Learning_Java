@@ -34,7 +34,7 @@ class Address implements Cloneable {
     int houseNumber;
 
     public Address(String street, int houseNumber) {
-        System.out.println("Some code in Address constructor ");
+        System.out.println("Some code in Address constructor "); //will not be called on cloning! -> constructor for cloning
         this.street = street;
         this.houseNumber = houseNumber;
     }
@@ -48,7 +48,7 @@ class Address implements Cloneable {
 class Person implements Cloneable {
     String name;
     int age;
-    Address address;
+    Address address; //final -> constructor for cloning
 
     public Person(String name, int age, Address address) {
         this.name = name;
