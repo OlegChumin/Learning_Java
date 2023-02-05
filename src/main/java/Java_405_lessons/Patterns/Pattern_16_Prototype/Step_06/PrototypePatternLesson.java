@@ -1,4 +1,4 @@
-package Java_405_lessons.Patterns.Pattern_16_Prototype.Step_05;
+package Java_405_lessons.Patterns.Pattern_16_Prototype.Step_06;
 
 /**
  * Deep cloning
@@ -54,24 +54,26 @@ class Address implements Cloneable {
 class Person implements Cloneable {
     String name;
     int age;
-    Address address; //final -> constructor for cloning
+    final Address address; //final -> constructor for cloning
 
     public Person(String name, int age, Address address) {
+        System.out.println("Contructor with name, age, address");
         this.name = name;
         this.age = age;
         this.address = address;
     }
 
     public Person(Person person) { //<--
+        System.out.println("Constructor with person");
         this.name = person.name;
         this.age = person.age;
         this.address = new Address(person.address); //<--
     }
 
-    @Override
-    protected Person clone() throws CloneNotSupportedException {
-        Person person = (Person) super.clone();
-        person.address = this.address.clone();
-        return person;
-    }
+//    @Override
+//    protected Person clone() throws CloneNotSupportedException {
+//        Person person = (Person) super.clone();
+//        person.address = this.address.clone();
+//        return person;
+//    }
 }
