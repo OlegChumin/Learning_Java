@@ -9,7 +9,7 @@ public class ReadAndPrintChangedString {
 
     public static void main(String[] args) {
         String stringToCheck = readString();
-        switch (stringToCheck.charAt(0)) {
+        switch (stringToCheck.charAt(CHAR_AT)) {
             case 'i': {
                 int result = Integer.parseInt((new StringBuilder(stringToCheck)).deleteCharAt(CHAR_AT).toString()) + 1;
                 System.out.println(result);
