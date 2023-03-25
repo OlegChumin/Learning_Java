@@ -25,7 +25,10 @@ public class Task_java_001 {
         int numberX = SCANNER.nextInt();
         int numberY = SCANNER.nextInt();
 
-        System.out.println("Результат сложения " + numberX + "+ " + numberY + " = " + (numberX + numberY));
+        System.out.println("Результат сложения " + numberX + " + " + numberY + " = " + (numberX + numberY));
+        System.out.println("Результат вычитания " + numberX + " - " + numberY + " = " + (numberX - numberY));
+        System.out.println("Результат умножения " + numberX + " * " + numberY + " = " + (numberX * numberY));
+        System.out.println("Результат целочисленного деления " + numberX + " / " + numberY + " = " + (numberX / numberY));
 
 //        int numberZ = Integer.parseInt(String.valueOf(SCANNER.nextInt()));
 //        String someString = SCANNER.nextLine();
