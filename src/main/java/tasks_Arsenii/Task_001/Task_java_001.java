@@ -35,7 +35,8 @@ public class Task_java_001 {
         System.out.println("Результат вычитания " + numberX + " - " + numberY + " = " + (numberX - numberY));
         System.out.println("Результат умножения " + numberX + " * " + numberY + " = " + (numberX * numberY));
         System.out.println("Результат целочисленного деления " + numberX + " / " + numberY + " = " + (numberX / numberY));
-
+        System.out.println(Integer.MAX_VALUE);
+        System.out.println(Integer.MIN_VALUE);
 //        int numberZ = Integer.parseInt(String.valueOf(SCANNER.nextInt()));
 //        String someString = SCANNER.nextLine();
 //        String someWord = SCANNER.next();
