@@ -9,6 +9,5 @@ public class TestClass {
 
         System.out.println("Text");
         stream.forEach(i -> System.out.println(i+1));
-
     }
 }
