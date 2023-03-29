@@ -43,6 +43,13 @@ class Solution {
         public Series(List<Integer> arrayListOfSeries) {
             this.arrayListOfSeries = arrayListOfSeries;
         }
+
+        @Override
+        public String toString() {
+            return "Series{" +
+                    "arrayListOfSeries=" + arrayListOfSeries +
+                    '}';
+        }
     }
 
     private static Scanner scanner = new Scanner(System.in);
@@ -50,17 +57,11 @@ class Solution {
     public static void main(String[] argh) {
         int q = getQNumberOFSeries();
         DataForSeries[] dataForSeries = readQSeriesOfABN(q);
+        printSeriesToConsole(collectSeries(dataForSeries));
         scanner.close();
     }
 
-    private static DataForSeries[] readQSeriesOfABN(int q) {
-        DataForSeries[] arrayOfSeries = new DataForSeries[q];
-        for (int i = 0; i < q; i++) {
-            arrayOfSeries[i] = getDataFromConsole();
-        }
-        return arrayOfSeries;
-    }
-
+    // get number of the objects DatForSeries -> number of series to be built
     private static int getQNumberOFSeries() {
         int q;
         while (true) {
@@ -72,6 +73,17 @@ class Solution {
         return q;
     }
 
+    // make array of DatForSeries object each of it has a, b, and n parameters
+    // length of array == q
+    private static DataForSeries[] readQSeriesOfABN(int q) {
+        DataForSeries[] arrayOfSeries = new DataForSeries[q];
+        for (int i = 0; i < q; i++) {
+            arrayOfSeries[i] = getDataFromConsole();
+        }
+        return arrayOfSeries;
+    }
+
+    // getting data for one object DataForSeries a, b, n
     private static DataForSeries getDataFromConsole() {
         int a, b, n;
         while (true) {
@@ -93,7 +105,8 @@ class Solution {
         return new DataForSeries(a, b, n);
     }
 
-    private static Series buildOneSerie(DataForSeries dataForSeries) {
+    // building one series -> object with arrayList of results == series
+    private static Series buildOneSeries(DataForSeries dataForSeries) {
         int element = 0;
         List<Integer> arrayListOfSeries = new ArrayList<>();
         for (int i = 0; i < dataForSeries.n; i++) {
@@ -107,7 +120,7 @@ class Solution {
     private static Series[] collectSeries(DataForSeries[] dataForSeries) {
         Series[] seriesArray = new Series[dataForSeries.length];
         for (int i = 0; i < seriesArray.length; i++) {
-            seriesArray[i] = buildOneSerie(dataForSeries[i]);
+            seriesArray[i] = buildOneSeries(dataForSeries[i]);
         }
         return seriesArray;
     }
