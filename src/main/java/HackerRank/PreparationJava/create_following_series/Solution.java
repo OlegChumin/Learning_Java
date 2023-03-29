@@ -4,15 +4,23 @@ import java.util.*;
 import java.io.*;
 
 class Solution {
-    private static final class DataSeries {
+    private static final class DataForSeries {
         private int a;
         private int b;
         private int n;
 
-        public DataSeries(int a, int b, int n) {
+        public DataForSeries(int a, int b, int n) {
             this.a = a;
             this.b = b;
             this.n = n;
+        }
+    }
+
+    private static final class Series {
+        private int[] arrayOfSeries;
+
+        public Series(int[] arrayOfSeries) {
+            this.arrayOfSeries = arrayOfSeries;
         }
     }
 
@@ -23,10 +31,10 @@ class Solution {
         scanner.close();
     }
 
-    private static DataSeries[] readQSeriesOfABN(int q) {
-        DataSeries[] arrayOfSeries = new DataSeries[q];
+    private static DataForSeries[] readQSeriesOfABN(int q) {
+        DataForSeries[] arrayOfSeries = new DataForSeries[q];
         for (int i = 1; i <= q; i++) {
-
+            arrayOfSeries[i] = getDataFromConsole();
         }
         return arrayOfSeries;
     }
@@ -35,7 +43,9 @@ class Solution {
         return scanner.nextInt();
     }
 
-    private static DataSeries getDataFromConsole() {
-        return new DataSeries(scanner.nextInt(), scanner.nextInt(), scanner.nextInt());
+    private static DataForSeries getDataFromConsole() {
+        return new DataForSeries(scanner.nextInt(), scanner.nextInt(), scanner.nextInt());
     }
+
+    private static buildSeries
 }
