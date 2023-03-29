@@ -1,6 +1,7 @@
 package HackerRank.PreparationJava.create_following_series;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -25,6 +26,15 @@ class Solution {
             this.b = b;
             this.n = n;
         }
+
+        @Override
+        public String toString() {
+            return "DataForSeries{" +
+                    "a=" + a +
+                    ", b=" + b +
+                    ", n=" + n +
+                    '}';
+        }
     }
 
     private static final class Series {
@@ -38,7 +48,12 @@ class Solution {
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] argh) {
-        getDataFromConsole();
+        int q = getQNumberOFSeries();
+        System.out.println("q = " + q);
+//        DataForSeries dataForSeries = getDataFromConsole();
+//        System.out.println(dataForSeries);
+//        DataForSeries[] dataForSeries = readQSeriesOfABN(q);
+//        System.out.println(Arrays.toString(dataForSeries));
         scanner.close();
     }
 
@@ -58,7 +73,7 @@ class Solution {
                 break;
             } else System.out.printf("Invalid input. Please enter values in the specified range: 0 <= q <= 500");
         }
-        return scanner.nextInt();
+        return q;
     }
 
     private static DataForSeries getDataFromConsole() {
