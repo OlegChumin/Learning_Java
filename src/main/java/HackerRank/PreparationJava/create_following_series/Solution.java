@@ -49,17 +49,13 @@ class Solution {
 
     public static void main(String[] argh) {
         int q = getQNumberOFSeries();
-        System.out.println("q = " + q);
-//        DataForSeries dataForSeries = getDataFromConsole();
-//        System.out.println(dataForSeries);
-//        DataForSeries[] dataForSeries = readQSeriesOfABN(q);
-//        System.out.println(Arrays.toString(dataForSeries));
+        DataForSeries[] dataForSeries = readQSeriesOfABN(q);
         scanner.close();
     }
 
     private static DataForSeries[] readQSeriesOfABN(int q) {
         DataForSeries[] arrayOfSeries = new DataForSeries[q];
-        for (int i = 1; i <= q; i++) {
+        for (int i = 0; i < q; i++) {
             arrayOfSeries[i] = getDataFromConsole();
         }
         return arrayOfSeries;
@@ -71,7 +67,7 @@ class Solution {
             q = scanner.nextInt();
             if (q >= LOW_BOUND_Q_A_B && q <= UPPER_BOUND_Q) {
                 break;
-            } else System.out.printf("Invalid input. Please enter values in the specified range: 0 <= q <= 500");
+            } else System.out.println("Invalid input. Please enter values in the specified range: 0 <= q <= 500");
         }
         return q;
     }
@@ -97,7 +93,7 @@ class Solution {
         return new DataForSeries(a, b, n);
     }
 
-    private static Series buildSeries(DataForSeries dataForSeries) {
+    private static Series buildOneSerie(DataForSeries dataForSeries) {
         int element = 0;
         List<Integer> arrayListOfSeries = new ArrayList<>();
         for (int i = 0; i < dataForSeries.n; i++) {
@@ -106,5 +102,19 @@ class Solution {
         }
         arrayListOfSeries.add(element);
         return new Series(arrayListOfSeries);
+    }
+
+    private static Series[] collectSeries(DataForSeries[] dataForSeries) {
+        Series[] seriesArray = new Series[dataForSeries.length];
+        for (int i = 0; i < seriesArray.length; i++) {
+            seriesArray[i] = buildOneSerie(dataForSeries[i]);
+        }
+        return seriesArray;
+    }
+
+    private static void printSeriesToConsole(Series[] series) {
+        for (int i = 0; i < series.length; i++) {
+            System.out.println(series[i]);
+        }
     }
 }
