@@ -1,19 +1,4 @@
 package HackerRank.PreparationJava.create_following_series;
-/**
- We have two queries:
-
- We use , , and  to produce some series :
-
- ... and so on.
-
- Once we hit , we print the first ten terms as a single line of space-separated integers.
-
- We use , , and  to produce some series :
-
- We then print each element of our series as a single line of space-separated values.
-
- */
-
 
 import java.util.*;
 import java.io.*;
