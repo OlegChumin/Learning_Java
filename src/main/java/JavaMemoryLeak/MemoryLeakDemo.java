@@ -22,7 +22,7 @@ public class MemoryLeakDemo {
         while (true) {
             leakingObjects.add(new LeakingObject());
             System.out.println("Leaking object count: " + leakingObjects.size());
-            Thread.sleep(100); // Sleep for 0.1 second before creating the next object
+//            Thread.sleep(100); // Sleep for 0.1 second before creating the next object
         }
     }
 }
@@ -74,5 +74,10 @@ public class MemoryLeakDemo {
  * <p>
  * Статические блоки инициализации: Это блоки кода, объявленные с ключевым словом static, которые выполняются при первом
  * обращении к классу. Они часто используются для инициализации статических полей класса.
+ * <p>
+ * Статические члены класса полезны для создания глобальных переменных и методов, которые не зависят от состояния
+ * объекта и могут быть вызваны напрямую через имя класса. Однако статические члены следует использовать с
+ * осторожностью,  * поскольку чрезмерное использование статических членов может привести к плохой модуляции и
+ * затруднить тестирование кода.
  */
 
