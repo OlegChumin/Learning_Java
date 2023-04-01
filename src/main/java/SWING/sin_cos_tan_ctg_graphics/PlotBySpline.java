@@ -113,6 +113,12 @@ public class PlotBySpline extends JFrame {
                 // График функции ctg
                 CtgGraph.draw(g2, width, height);
 
+                // График функции log10
+                LogGraph logGraph = new LogGraph();
+                logGraph.draw(g2, width, height);
+
+                g2.setColor(Color.CYAN);
+                g2.drawString("log(x)", width / 4, height / 5);
                 g2.drawString("sin(x)", width / 4, height / 5);
                 g2.drawString("cos(x)", width / 2, height / 5);
                 g2.drawString("tan(x)", 3 * width / 4, height / 5);
