@@ -41,6 +41,7 @@ public class SinGraph extends JPanel {
             }
         }
         // Отображаем график функции sin(x) в окне с помощью пути pathSin
+        g2.drawString("sin(x)", width / 7, height / 5);
         g2.draw(pathSin);
     }
 }

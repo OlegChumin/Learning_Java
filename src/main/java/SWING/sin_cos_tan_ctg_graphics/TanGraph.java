@@ -24,7 +24,7 @@ public class TanGraph extends JPanel {
         this.height = height;
     }
 
-    public void draw(Graphics g) {
+    public static void draw(Graphics g, int width, int height) {
         Graphics2D g2 = (Graphics2D) g;
         g2.setColor(Color.BLUE); // устанавливаем цвет линии графика в синий
         Path2D.Double pathTan = new Path2D.Double(); // создаем объект pathTan для рисования графика функции
@@ -39,5 +39,6 @@ public class TanGraph extends JPanel {
             }
         }
         g2.draw(pathTan); // рисуем график функции на панели с помощью объекта pathTan
+        g2.drawString("tag(x)", width / 2 + width / 8, height / 5);
     }
 }

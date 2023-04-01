@@ -20,6 +20,8 @@ public class LogGraph {
                 pathLog.lineTo(x1, y1);
             }
         }
+        g2.drawString("log(x)", width / 3, height / 5);
         g2.draw(pathLog);
+
     }
 }

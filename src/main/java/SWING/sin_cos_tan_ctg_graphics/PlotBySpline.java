@@ -77,37 +77,12 @@ public class PlotBySpline extends JFrame {
                 }
                 g2.draw(pathSin); // Отображаем график функции sin(x) в окне с помощью пути pathSin
 
-
-
                 // График функции cos
-                g2.setColor(Color.GREEN);
-                Path2D.Double pathCos = new Path2D.Double();
-                for (double x = -5; x <= 5; x += 0.01) {
-                    double y = Math.cos(x);
-                    int x1 = (int) ((x + 5) * width / 10);
-                    int y1 = (int) ((1 - y) * height / 2);
-                    if (x == -5) {
-                        pathCos.moveTo(x1, y1);
-                    } else {
-                        pathCos.lineTo(x1, y1);
-                    }
-                }
-                g2.draw(pathCos);
+                CosGraph cosGraph = new CosGraph(g2, width, height); // создаем объект графика функции cos
+                cosGraph.draw(g2); // отображаем график на панели
 
                 // График функции tan
-                g2.setColor(Color.BLUE); // устанавливаем цвет линии графика в синий
-                Path2D.Double pathTan = new Path2D.Double(); // создаем объект pathTan для рисования графика функции
-                for (double x = -1.45; x <= 1.45; x += 0.01) { // цикл для прохода по значениям аргумента x функции tan
-                    double y = Math.tan(x); // вычисляем значение функции для данного x
-                    int x1 = (int) ((x + 1.45) * width / 2.9); // вычисляем координату x точки на графике
-                    int y1 = (int) ((1 - y) * height / 2); // вычисляем координату y точки на графике
-                    if (x == -1.45) { // если это первая точка на графике
-                        pathTan.moveTo(x1, y1); // перемещаем перо в эту точку
-                    } else { // иначе
-                        pathTan.lineTo(x1, y1); // проводим линию из предыдущей точки в текущую
-                    }
-                }
-                g2.draw(pathTan); // рисуем график функции на панели с помощью объекта pathTan
+                TanGraph.draw(g2, width, height);
 
 
                 // График функции ctg
@@ -116,14 +91,6 @@ public class PlotBySpline extends JFrame {
                 // График функции log10
                 LogGraph logGraph = new LogGraph();
                 logGraph.draw(g2, width, height);
-
-                g2.setColor(Color.CYAN);
-                g2.drawString("log(x)", width / 4, height / 5);
-                g2.drawString("sin(x)", width / 4, height / 5);
-                g2.drawString("cos(x)", width / 2, height / 5);
-                g2.drawString("tan(x)", 3 * width / 4, height / 5);
-                g2.drawString("ctg(x)", width / 4, 4 * height / 5);
-
             }
         };
 

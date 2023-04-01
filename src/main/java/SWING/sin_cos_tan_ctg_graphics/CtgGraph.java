@@ -39,6 +39,7 @@ public class CtgGraph {
 
             // Отрисовка точки на графике с помощью линии длиной 0 пикселей
             g2.draw(new Line2D.Double(x1, y1, x1, y1));
+            g2.drawString("ctg(x)", width / 2 + width / 8, 4 * height / 5);
         }
     }
 }
