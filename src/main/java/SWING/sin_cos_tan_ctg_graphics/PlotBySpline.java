@@ -13,6 +13,9 @@ public class PlotBySpline extends JFrame {
         setTitle("Function Plot by Oleg Chumin");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
+        PlotLabels plotLabels = new PlotLabels();
+        getContentPane().add(plotLabels, BorderLayout.NORTH);
+
         graphPanel = new JPanel() {
             @Override
             protected void paintComponent(Graphics g) {
@@ -54,6 +57,11 @@ public class PlotBySpline extends JFrame {
                 // Рисуем надпись "-1" на нижней стороне вертикальной оси координат
                 g2.drawString("-1", width / 2 + 10, height - 10);
 
+
+                // Отрисовка графика sin(x) через класс SinGraph
+                SinGraph sinGraph = new SinGraph(g2, width, height);
+                sinGraph.draw(g2);
+
                 // График функции sin
                 g2.setColor(Color.RED); // Задаем цвет графика - красный
                 Path2D.Double pathSin = new Path2D.Double(); // Создаем объект для хранения пути графика
@@ -68,6 +76,7 @@ public class PlotBySpline extends JFrame {
                     }
                 }
                 g2.draw(pathSin); // Отображаем график функции sin(x) в окне с помощью пути pathSin
+
 
 
                 // График функции cos
@@ -123,6 +132,12 @@ public class PlotBySpline extends JFrame {
                     int y1 = (int) ((1 - y) * height / 2); // перевод координаты y в пиксели
                     g2.draw(new Line2D.Double(x1, y1, x1, y1)); // отрисовка точки на графике
                 }
+
+                g2.drawString("sin(x)", width / 4, height / 5);
+                g2.drawString("cos(x)", width / 2, height / 5);
+                g2.drawString("tan(x)", 3 * width / 4, height / 5);
+                g2.drawString("ctg(x)", width / 4, 4 * height / 5);
+
             }
         };
 

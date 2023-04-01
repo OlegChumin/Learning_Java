@@ -1,4 +1,4 @@
-package SWING.sin_cos_tan_ctg_graphics;
+package SWING.sin_cos_tan_ctg_graphics.byPoints;
 
 import javax.swing.*;
 import java.awt.*;
