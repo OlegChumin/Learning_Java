@@ -8,28 +8,24 @@ public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String[] input = reader.readLine().split(" ");
-        String dataType = parseType(input[0]);
-        int n = Integer.parseInt(input[1]);
-        if (dataType.equals("Integer")) {
-            Integer[] arr = new Integer[n];
-            for (int i = 0; i < n; i++) {
-                arr[i] = Integer.parseInt(reader.readLine());
+
+        if (isNumeric(input[0])) {
+            Integer[] arr = new Integer[input.length];
+            for (int i = 0; i < input.length; i++) {
+                arr[i] = Integer.parseInt(input[i]);
             }
             System.out.println(Arithmetic.sum(arr));
-        } else if (dataType.equals("String")) {
-            String[] arr = new String[n];
-            for (int i = 0; i < n; i++) {
-                arr[i] = reader.readLine();
-            }
-            System.out.println(Arithmetic.sum(arr));
+        } else {
+            System.out.println(Arithmetic.sum(input));
         }
     }
 
-    public static String parseType(String s) {
-        if (s.matches("\\d+")) {
-            return "Integer";
-        } else {
-            return "String";
+    public static boolean isNumeric(String str) {
+        try {
+            Integer.parseInt(str);
+            return true;
+        } catch (NumberFormatException e) {
+            return false;
         }
     }
 }
