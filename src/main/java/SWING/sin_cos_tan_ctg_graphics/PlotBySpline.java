@@ -1,5 +1,7 @@
 package SWING.sin_cos_tan_ctg_graphics;
 
+import SWING.sin_cos_tan_ctg_graphics.plot_functions.*;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.geom.Line2D;

@@ -1,4 +1,4 @@
-package SWING.sin_cos_tan_ctg_graphics;
+package SWING.sin_cos_tan_ctg_graphics.plot_functions;
 
 /**
  * В CosGraph был добавлен конструктор для инициализации полей width и height, а также метод draw(), который рисует

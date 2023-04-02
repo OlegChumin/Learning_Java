@@ -1,4 +1,4 @@
-package SWING.sin_cos_tan_ctg_graphics;
+package SWING.sin_cos_tan_ctg_graphics.plot_functions;
 
 import java.awt.Color;
 import java.awt.Graphics2D;

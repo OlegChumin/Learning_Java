@@ -1,4 +1,4 @@
-package SWING.sin_cos_tan_ctg_graphics;
+package SWING.sin_cos_tan_ctg_graphics.plot_functions;
 
 /**
  * Данный код строит график функции ctg (котангенс) на основе последовательного рисования точек.
