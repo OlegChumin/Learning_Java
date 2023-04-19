@@ -1,0 +1,36 @@
+
+u	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ˆŞ78ûïä•ö0
+o
+java:S6204;"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8›“–ö0
+Z	java:S106<"9Replace this use of System.out or System.err by a logger.(™ÌÇıÿÿÿÿ8œ“–ö0
+o
+java:S6204A"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8œ“–ö0
+U	java:S106B"9Replace this use of System.out or System.err by a logger.(ø Ÿ8“–ö0
+Z	java:S106G"9Replace this use of System.out or System.err by a logger.(à¤Æşúÿÿÿÿ8“–ö0
+U	java:S106J"9Replace this use of System.out or System.err by a logger.(ı–¬®8“–ö0
+Z	java:S106L"9Replace this use of System.out or System.err by a logger.(¹¦…‡úÿÿÿÿ8“–ö0
+o
+java:S6204Q"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8Ÿ“–ö0
+Z	java:S106R"9Replace this use of System.out or System.err by a logger.(ıçµòüÿÿÿÿ8Ÿ“–ö0
+Z	java:S106W"9Replace this use of System.out or System.err by a logger.(ˆÄıÒøÿÿÿÿ8 “–ö0
+U	java:S106\"9Replace this use of System.out or System.err by a logger.(ÍÙŸ”8¡“–ö0
+Z	java:S106a"9Replace this use of System.out or System.err by a logger.(Í€ûÊşÿÿÿÿ8¡“–ö0
+o
+java:S6204g"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8¢“–ö0
+Z	java:S106h"9Replace this use of System.out or System.err by a logger.(öŠµøÿÿÿÿ8¢“–ö0
+o
+java:S6204l"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(òâ¿¢8£“–ö0
+U	java:S106m"9Replace this use of System.out or System.err by a logger.(•ôÜ¢8£“–ö0
+o
+java:S6204t"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8£“–ö0
+Z	java:S106u"9Replace this use of System.out or System.err by a logger.(ÚÒ†ùúÿÿÿÿ8¥“–ö0
+o
+java:S6204{"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8¥“–ö0
+U	java:S106|"9Replace this use of System.out or System.err by a logger.(¶úê°8¦“–ö0
+p
+java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8¦“–ö0
+V	java:S106‚"9Replace this use of System.out or System.err by a logger.(¼ÓªÊ8¦“–ö0
+p
+java:S6204‡"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8§“–ö0
+[	java:S106ˆ"9Replace this use of System.out or System.err by a logger.(Áö©àÿÿÿÿÿ8§“–ö0
+[	java:S106"9Replace this use of System.out or System.err by a logger.(ü¯½¿ùÿÿÿÿ8¨“–ö0

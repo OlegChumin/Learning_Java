@@ -1,6 +1,5 @@
 package SnakeGame.part_1;
 
-import Kotlin.GameField;
 
 import javax.swing.*;
 
@@ -19,6 +18,6 @@ public class MainWindow extends JFrame {
     }
 
     public static void main(String[] args) {
-        Kotlin.MainWindow mw = new Kotlin.MainWindow();
+        MainWindow mw = new MainWindow();
     }
 }
