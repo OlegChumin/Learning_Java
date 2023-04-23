@@ -12,7 +12,7 @@ public class JavaTask006 {
             int n = scanner.nextInt();
             int tepmporary = a + 1 * b;
             for (int j = 0; j < n; j++) {
-                System.out.print(tepmporary + " ");
+                System.out.print(tepmporary + " "); //print the result of formula of sequence below on each iteration
                 tepmporary = tepmporary + (int) Math.pow(2, j + 1) * b;
             }
             System.out.println();
