@@ -1,4 +1,4 @@
-package HackerRank.PrepaireToInterview;
+package HackerRank.PrepaireToInterview.task005;
 
 
 import java.util.Scanner;
