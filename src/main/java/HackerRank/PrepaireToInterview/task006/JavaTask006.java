@@ -10,10 +10,10 @@ public class JavaTask006 {
             int a = scanner.nextInt();
             int b = scanner.nextInt();
             int n = scanner.nextInt();
-            int teprorary = a + 1 * b;
+            int tepmporary = a + 1 * b;
             for (int j = 0; j < n; j++) {
-                System.out.print(teprorary + " ");
-                teprorary = teprorary + (int) Math.pow(2, j + 1) * b;
+                System.out.print(tepmporary + " ");
+                tepmporary = tepmporary + (int) Math.pow(2, j + 1) * b;
             }
             System.out.println();
         }
