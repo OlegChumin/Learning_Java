@@ -1,4 +1,4 @@
-package HackerRank.exam4;
+package HackerRank.exam_2023.exam4;
 
 public class BitPuzzle {
     public static void main(String[] args) {

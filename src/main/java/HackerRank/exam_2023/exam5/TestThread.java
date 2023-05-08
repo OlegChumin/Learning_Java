@@ -1,4 +1,4 @@
-package HackerRank.exam5;
+package HackerRank.exam_2023.exam5;
 
 public class TestThread {
     public static void main(String[] args) {

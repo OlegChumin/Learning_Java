@@ -1,4 +1,4 @@
-package HackerRank.exam2;
+package HackerRank.exam_2023.exam2;
 
 import java.io.BufferedReader;
 import java.io.IOException;

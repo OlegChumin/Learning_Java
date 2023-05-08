@@ -1,4 +1,4 @@
-package HackerRank.exam3;
+package HackerRank.exam_2023.exam3;
 
 public class Test {
     public static void main(String[] args) {
