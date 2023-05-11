@@ -29,6 +29,7 @@ public class PrefixTree {
                 child = new TreeNode(c);
                 children.add(child);
             }
+            child.insert(data.substring(1));
         }
 
         //поиск в массиве дочерних узлов искать узел по его символу
