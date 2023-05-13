@@ -1,13 +1,13 @@
 package OOP;
 
-public class Cat extends AnimalNew {
-
+public class Duck extends AnimalNew {
     @Override
     void sleep() {
-        System.out.println("Cat can sleep");
+        System.out.println("Duck can sleep");
     }
 
     void say() {
         System.out.println("Cat say Miau");
     }
+
 }

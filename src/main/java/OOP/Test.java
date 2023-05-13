@@ -1,5 +1,7 @@
 package OOP;
 
+import org.apache.logging.log4j.core.util.DummyNanoClock;
+
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -18,6 +20,7 @@ public class Test {
             break;
             case "Cat": {Cat cat = new Cat(); cat.sleep();}
             break;
+            case "Duck": {}
             default:
                 System.out.println("No such animal");
         }
