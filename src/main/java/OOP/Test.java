@@ -1,5 +1,6 @@
 package OOP;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Test {
