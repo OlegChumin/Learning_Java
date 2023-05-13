@@ -29,8 +29,15 @@ public class Test {
                 cat.sleep();
             }
             break;
-            case "Duck": {
+            case "Duck_Animal": {
                 AnimalNew duck = new Duck();
+                duck.sleep();
+                break;
+            }
+            case "Duck": {
+                Duck duck = new Duck();
+                duck.sleep();
+                duck.say();
                 break;
             }
             default:

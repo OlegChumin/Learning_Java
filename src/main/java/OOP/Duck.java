@@ -7,7 +7,6 @@ public class Duck extends AnimalNew {
     }
 
     void say() {
-        System.out.println("Cat say Miau");
+        System.out.println("Cat say Kria Kria");
     }
-
 }
