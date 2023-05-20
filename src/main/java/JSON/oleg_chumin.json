@@ -1,0 +1,32 @@
+{
+  "name": "Your Name Here",
+  "primary_role": {
+    "job_title": "Java Full Stack Software Developer",
+    "company": "EPAM Anywhere",
+    "location": "Turkey"
+  },
+  "other_roles": {
+    "instructor_skills": [
+      "Java",
+      "Kotlin",
+      "C#",
+      ".NET",
+      "Unity"
+    ]
+  },
+  "education": [
+    {
+      "degree": "Bachelor of Science",
+      "field": "Computer Science"
+    },
+    {
+      "degree": "Master of Science",
+      "field": "Business",
+      "specialization": "Computer Simulation Systems of Economic Processes"
+    },
+    {
+      "professional_title": "Professional Aircraft Engineer",
+      "specialization": "Mechanical Design of Airplane and Helicopter Construction"
+    }
+  ]
+}
