@@ -157,6 +157,14 @@
             <version>11.0.0-M5</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.google.auto/auto-common -->
+        <dependency>
+            <groupId>com.google.auto</groupId>
+            <artifactId>auto-common</artifactId>
+            <version>1.2.1</version>
+            <scope>runtime</scope>
+        </dependency>
+
     </dependencies>
 
     <build>
