@@ -1,4 +1,4 @@
-package sending_emails
+package sending_emails;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
