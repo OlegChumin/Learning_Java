@@ -13,7 +13,7 @@ package sending_emails.properties_sample;
  * */
 import java.util.Properties;
 
-public class EmailSender {
+public class EmailSenderProperties {
 
     public static void main(String[] args) {
         String fromEmail = "sender@example.com"; // Адрес отправителя
