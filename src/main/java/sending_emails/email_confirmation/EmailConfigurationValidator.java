@@ -6,7 +6,14 @@ import java.util.regex.Pattern;
 
 public class EmailConfigurationValidator {
 
-    private static final String EMAIL_REGEX = "^(.+)@(.+)$";
+    /**
+     * Адрес электронной почты должен начинаться с одного или более символов [A-Za-z0-9._%+-].
+     * Затем должен следовать символ "@".
+     * После символа "@" должен быть один или более символов [A-Za-z0-9.-].
+     * Затем должна быть точка (".") и два или более символов [A-Za-z].
+     * */
+    private static final String EMAIL_REGEX = "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$";
+
     private static final String SERVER_REGEX = "^smtp\\.(.+)\\.com$";
 
     public static void main(String[] args) {
