@@ -1,6 +1,5 @@
 package sending_emails.email_confirmation;
 
-import java.util.Properties;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
