@@ -5,7 +5,21 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import java.util.Properties;
 
-public class EmailSender {
+/**
+ * MimeMessage - это класс в библиотеке JavaMail API, который представляет MIME-сообщение электронной почты.
+ * MIME (Multipurpose Internet Mail Extensions) - это стандарт, который определяет форматы и структуру сообщений
+ * электронной почты, включая возможность вставки различных типов контента, таких как текст, изображения, аудио и
+ * другие файлы.
+ *
+ * MimeMessage предоставляет методы для установки и получения различных свойств и элементов сообщения, таких как
+ * отправитель, получатель, тема, текст, прикрепленные файлы и другие. Он позволяет создавать и форматировать
+ * сообщения согласно стандартам MIME.
+ *
+ * Вот пример использования MimeMessage для создания и отправки простого текстового сообщения:
+ *
+ * */
+
+public class EmailSenderMIME {
 
     public static void main(String[] args) {
         String toEmail = "recipient@example.com"; // Адрес получателя
@@ -46,3 +60,11 @@ public class EmailSender {
         }
     }
 }
+
+/**
+ * В этом примере создается объект MimeMessage с помощью Session.getInstance() и настраивается с помощью свойств,
+ * таких как mail.smtp.auth, mail.smtp.starttls.enable, mail.smtp.host и mail.smtp.port. Затем устанавливаются
+ * отправитель, получатель, тема и текст сообщения с помощью методов setFrom(), addRecipient(), setSubject() и setText().
+ * Наконец, сообщение отправляется с помощью метода Transport.send().
+ *
+ * */
