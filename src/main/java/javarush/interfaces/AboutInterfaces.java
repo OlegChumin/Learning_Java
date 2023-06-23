@@ -39,13 +39,13 @@ interface StartMethods { // демонстрация того, что можно
         return id;
     }
 
-    private void printInfo(String details) {  // приватный метод с параметром типа String
-        System.out.println("Printing information" + details);
-    }
+//    private void printInfo(String details) {  // приватный метод с параметром типа String
+//        System.out.println("Printing information" + details);
+//    }
 
-    private static void write() {
-
-    }
+//    private static void write() {
+//
+//    }
 
 }
 
