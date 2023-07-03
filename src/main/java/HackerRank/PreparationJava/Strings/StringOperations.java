@@ -25,7 +25,7 @@ public class StringOperations {
             System.out.println("No");
         }
 
-        String result = changeFirstCharInStringToUpperCase(firstCharToUpperCase(str1), str1) +
+        String result = changeFirstCharInStringToUpperCase(firstCharToUpperCase(str1), str1) + " " +
                 changeFirstCharInStringToUpperCase(firstCharToUpperCase(str2), str2);
 
         System.out.println(result);
