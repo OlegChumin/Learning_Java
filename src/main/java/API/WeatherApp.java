@@ -29,7 +29,7 @@ import java.net.URL;
 
 public class WeatherApp {
     public static void main(String[] args) {
-        String apiKey = "493956338161c1426ef04a13f8741edc"; // Замените на свой ключ OpenWeatherMap API
+        String apiKey = " "; // Замените на свой ключ OpenWeatherMap API
         String city = "Moscow";
         String apiUrl = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey;
 
