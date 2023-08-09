@@ -48,8 +48,13 @@ public class WeatherApp {
             reader.close();
 
             System.out.println("Response: " + response);
-
+            System.out.println();
             // Здесь вы можете распарсить полученные данные и обработать их
+
+            // Вызов методов для обработки JSON
+            JSONHandler.printJson(response.toString());
+            JSONHandler.saveJsonToFile(response.toString(), "src/main/java/API/output.json");
+
         } catch (Exception e) {
             e.printStackTrace();
         }
