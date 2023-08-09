@@ -2,6 +2,7 @@ package API;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -27,6 +28,7 @@ public class JSONHandler {
     public static void saveJsonToFile(String jsonString, String fileName) {
         try {
             ObjectMapper objectMapper = new ObjectMapper();
+            objectMapper.enable(SerializationFeature.INDENT_OUTPUT); // Включить красивый формат
             JsonNode jsonNode = objectMapper.readTree(jsonString);
 
             // Сохранение JSON в файл
@@ -40,4 +42,5 @@ public class JSONHandler {
             e.printStackTrace();
         }
     }
+
 }
