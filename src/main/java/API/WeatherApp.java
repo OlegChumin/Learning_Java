@@ -33,7 +33,7 @@ import java.util.Properties;
 public class WeatherApp {
     public static void main(String[] args) {
         Properties properties = new Properties();
-        try (InputStream inputStream = WeatherApp.class.getClassLoader().getResourceAsStream("myconfig.properties")) {
+        try (InputStream inputStream = WeatherApp.class.getClassLoader().getResourceAsStream("src/main/java/API/myconfig.properties")) {
             properties.load(inputStream);
             String apiKey = properties.getProperty("api.key");
             // Используйте apiKey в вашем коде
