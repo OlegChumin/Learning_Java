@@ -9,8 +9,13 @@ import java.io.IOException;
 public class JSONHandler {
     public static void printJson(String jsonString) {
         try {
-            ObjectMapper objectMapper = new ObjectMapper();
-            JsonNode jsonNode = objectMapper.readTree(jsonString);
+            ObjectMapper objectMapper = new ObjectMapper(); //ObjectMapper - это основной класс, который предоставляет
+            // методы для преобразования между Java-объектами и JSON-данными. Он будет использоваться для анализа
+            // JSON-строки и создания объекта, представляющего JSON.
+            JsonNode jsonNode = objectMapper.readTree(jsonString); //В этой строке используется созданный ранее
+            // objectMapper для анализа (парсинга) строки jsonString в объект типа JsonNode. JsonNode - это класс из
+            // библиотеки Jackson, который представляет JSON-структуру в виде дерева узлов. В данном случае, JSON-строка
+            // будет разобрана и преобразована в иерархию узлов, которую можно будет легко обрабатывать.
 
             // Вывод JSON на экран
             System.out.println("JSON Response:\n" + jsonNode.toPrettyString());
