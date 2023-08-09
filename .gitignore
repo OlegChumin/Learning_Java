@@ -11,7 +11,7 @@ target/
 *.iws
 *.iml
 *.ipr
-src/main/java/API/myconfig.properties
+src/main/resources/myconfig.properties
 
 ### Eclipse ###
 .apt_generated
