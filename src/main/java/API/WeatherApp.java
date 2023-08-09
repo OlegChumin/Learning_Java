@@ -32,16 +32,17 @@ import java.util.Properties;
 
 public class WeatherApp {
     public static void main(String[] args) {
-        Properties properties = new Properties();
-        try (InputStream inputStream = WeatherApp.class.getClassLoader().getResourceAsStream("src/main/java/API/myconfig.properties")) {
-            properties.load(inputStream);
-            String apiKey = properties.getProperty("api.key");
-            // Используйте apiKey в вашем коде
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        String apiKey = " "; // Используйте apiKey в вашем коде
+//        Properties properties = new Properties();
+//        try (InputStream inputStream = WeatherApp.class.getClassLoader().getResourceAsStream("src/main/java/API/myconfig.properties")) {
+//            properties.load(inputStream);
+//            apiKey = properties.getProperty("api.key");
+//            System.out.println(apiKey);
+//
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
 
-        String apiKey = " "; // Замените на свой ключ OpenWeatherMap API
         String city = "Moscow";
         String apiUrl = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey;
 
