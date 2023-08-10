@@ -44,7 +44,7 @@ public class WeatherApp {
         }
 
         String city = "Moscow";
-        String apiUrl = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey;
+        String apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey;
 
         try {
             URL url = new URL(apiUrl); // контейнер с адресом API сервиса
