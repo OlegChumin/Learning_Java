@@ -1,35 +1,35 @@
 package static_block;
 
-class MyClass {
+class Parent {
     static {
-        System.out.println("1. Статический блок инициализации класса MyClass");
+        System.out.println("Static block in Parent");
     }
 
     {
-        System.out.println("2. Статический блок инициализации объекта MyClass");
+        System.out.println("Instance initialization block in Parent");
     }
 
-    public MyClass() {
-        System.out.println("3. Конструктор MyClass");
+    Parent() {
+        System.out.println("Constructor in Parent");
     }
 }
 
-class MySubClass extends MyClass {
+class Child extends Parent {
     static {
-        System.out.println("4. Статический блок инициализации класса MySubClass");
+        System.out.println("Static block in Child");
     }
 
     {
-        System.out.println("5. Статический блок инициализации объекта MySubClass");
+        System.out.println("Instance initialization block in Child");
     }
 
-    public MySubClass() {
-        System.out.println("6. Конструктор MySubClass");
+    Child() {
+        System.out.println("Constructor in Child");
     }
 }
 
 public class Main {
     public static void main(String[] args) {
-        MySubClass obj = new MySubClass();
+        Child child = new Child();
     }
 }
