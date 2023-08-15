@@ -3,7 +3,8 @@
 <!--http://jakarta.apache.org/log4j/-->
 <log4j:configuration xmlns:log4j='https://logging.apache.org/log4j/2.x/'
                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                     xsi:schemaLocation="https://logging.apache.org/log4j/2.x/ ">
+                     xsi:schemaLocation="https://logging.apache.org/log4j/2.x/
+https://logging.apache.org/log4j/2.x/ ">
     <!-- appender - описатель приемника данных -->
     <appender name="fileAppender" class="org.apache.log4j.RollingFileAppender"> <!--RollingFileAppender пишет частями-->
         <param name="maxFileSize" value="500KB"/> <!--logfile_test.log.1--><!--logfile_test.log.2 ...-->
