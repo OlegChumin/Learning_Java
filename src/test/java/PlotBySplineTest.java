@@ -18,6 +18,7 @@ public class PlotBySplineTest {
         assertNotNull(plotBySpline.getGraphics(), "Graphics should not be null");
         assertEquals(800, plotBySpline.getWidth(), "Width should be 800");
         assertEquals(600, plotBySpline.getHeight(), "Height should be 600");
-        assertEquals(plotBySpline.getTitle(), "Function Plot by Oleg Chumin", "Function Plot by Oleg Chumin'");
+        assertEquals("Function Plot by Oleg Chumin", plotBySpline.getTitle(), "Function title should match");
+
     }
 }
