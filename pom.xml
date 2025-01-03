@@ -121,8 +121,9 @@
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <version>42.6.1</version>
+            <version>42.7.4</version>
         </dependency>
+
 
         <!-- https://mvnrepository.com/artifact/io.reactivex.rxjava2/rxjava -->
         <dependency>
