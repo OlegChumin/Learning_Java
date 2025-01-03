@@ -1,8 +1,6 @@
 import SWING.sin_cos_tan_ctg_graphics.PlotBySpline;
 import org.junit.jupiter.api.Test;
 
-import javax.swing.*;
-import java.awt.*;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
