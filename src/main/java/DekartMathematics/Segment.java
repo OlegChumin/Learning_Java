@@ -5,23 +5,23 @@ public class Segment {
     Point end; //null
 
     public Segment(Point start, Point end) {
-        if (start.getX() == end.getX() && start.getY() == end.getY()) { // проверяем совпадение координат начала и
-            // конца отрезка -> "вырожденным отрезком" == точка
-            throw new RuntimeException("отрезок вырожден координаты начала и конца совпадают");
-        } else if (start == null || end == null) {
+        if (start == null || end == null) {
             throw new RuntimeException("отрезок не существует");
-        } else {
-            this.start = start;
-            this.end = end;
         }
+        if (start.getX() == end.getX() && start.getY() == end.getY()) {
+            throw new RuntimeException("отрезок вырожден координаты начала и конца совпадают");
+        }
+        this.start = start;
+        this.end = end;
     }
+
 
     public double segmentLength() {
         return Math.sqrt(Math.pow((end.getX() - start.getX()), 2) + Math.pow((end.getY() - start.getY()), 2));
     }
 
     public Point segmentMiddlePoint() {
-        return new Point((start.getX() + end.getX()) / 2, (start.getY()) + end.getY() / 2);
+        return new Point((start.getX() + end.getX()) / 2, (start.getY() + end.getY()) / 2);
     }
 
     public Point segmentsIntersection(Segment another) {
