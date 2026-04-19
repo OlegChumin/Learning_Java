@@ -1,0 +1,137 @@
+"Hi everyone! Get ready to dive into the exciting world of Java programming!"
+
+Hello young Jedis! How's everyone doing today
+
+English language is important for people studying programming and working in IT because it is the primary language of communication.
+Today, I want to go through the names of symbols, and then we will talk about git
+
+" - double quote (кавычки)
+' - single quote (апостроф)
+; - semicolon (точка с запятой)
+: - colon (двоеточие)
+, - comma (запятая)
+. - period (точка)
+! - exclamation mark (восклицательный знак)
+? - question mark (вопросительный знак)
+() - parentheses (круглые скобки)
+[] - square brackets (квадратные скобки)
+{} - curly brackets (фигурные скобки)
+/ - slash (косая черта)
+\ - backslash (обратная косая черта)
+asterisk (звездочка)
+& - ampersand (амперсанд)
+@ - at symbol (символ "собачка")
+# - hashtag (хештег)
+
+! - not (логическое отрицание)
+? - question mark (вопросительный знак)
+!= - not equal (не равно)
+& - and (логическое И)
+|| - or (логическое ИЛИ)
+
+
+Конечно, вот перевод некоторых знаков арифметических операций с русского на английский:
+
++ plus (плюс)
+- minus (минус)
+* multiply (умножить)
+/ - divide (разделить)
+% - percent (процент)
+= - equals (равно)
+< - less than (меньше чем)
+greater than (больше чем)
+
+Целочисленное деление - integer division
+Возведение в степень - exponentiation (или power)
+Логарифм - logarithm
+Квадратный корень - square root
+
+The symbol "@" in English is called "at." However, in some regions and contexts, this symbol is also referred to as
+the "at sign" or "commercial at."
+
+The history behind why the "@" symbol is associated with the word "dog" in English-speaking countries is not entirely
+clear. There are various theories, including the evolution of the symbol resembling a stylized figure of a dog or its
+historical usage in commercial documents and telegraphy.
+
+In general, "at" is the standard and more formal way to refer to this symbol, but the use of "at sign" or simply "at"
+depends on the context and region.
+
+
+GIT
+
+Git расшифровывается как "Global Information Tracker" или "Gimme Information, Too."
+Это система управления версиями, широко используемая в разработке программного обеспечения
+для отслеживания изменений в исходном коде.
+
+Git stands for "Global Information Tracker" or "Gimme Information, Too."
+It is a version control system widely used in software development to track changes
+in source code.
+
+
+git --version
+
+git config --global user.name "Oleg Chumin"
+
+git config --global user.email "tschumin.oleg@gmail.com"
+
+git config --global color.ui true
+Команда git config --global color.ui true устанавливает опцию цветового оформления в глобальной конфигурации Git.
+Когда эта опция установлена в true, Git будет использовать цветовое оформление для вывода в терминале,
+что может сделать вывод команд более наглядным.
+The command git config --global color.ui true sets the color option in the global Git configuration. When this option
+is set to true, Git will use color formatting for terminal output, making command outputs more visually appealing.
+
+В частности, эта команда включает цветовое оформление для различных состояний в выводе команды git status,
+git branch и других команд Git. Цвета обычно используются для выделения изменений, новых файлов, веток и других
+аспектов в рабочем дереве и репозитории.
+
+
+Конечно, вот список некоторых самых часто используемых команд Git с их английскими переводами:
+
+git init - инициализировать новый репозиторий / initialize a new repository
+git clone - клонировать репозиторий / clone a repository
+git add - добавить изменения в индекс / stage changes to the index
+git commit - создать коммит / create a commit
+git status - проверить состояние репозитория / check the status of the repository
+git branch - управление ветками / manage branches
+git merge - объединить изменения из другой ветки / merge changes from another branch
+git pull - получить изменения из удаленного репозитория / fetch changes from a remote repository
+git push - отправить изменения в удаленный репозиторий / push changes to a remote repository
+git log - просмотреть историю коммитов / view commit history
+git diff - показать различия между версиями / show differences between versions
+git remote - управление удаленными репозиториями / manage remote repositories
+git fetch - получить изменения из удаленного репозитория, но не объединять их / fetch changes from a remote repository without merging
+git reset - отменить коммит или изменения / undo commits or changes
+git checkout - переключиться между ветками или версиями / switch between branches or versions
+Это базовый список команд, и использование Git также включает в себя множество других команд и опций.
+
+# Создаем новую директорию на рабочем столе
+mkdir C:\Users\Твое_Имя_Пользователя\Desktop\MyGitRepo
+
+# Переходим в созданную директорию
+cd C:\Users\Твое_Имя_Пользователя\Desktop\MyGitRepo
+
+# Инициализируем новый Git репозиторий
+git init
+
+# Создаем пару текстовых файлов
+echo "Содержимое файла 1" > file1.txt
+echo "Содержимое файла 2" > file2.txt
+
+# Добавляем файлы в отслеживаемую зону
+git add file1.txt file2.txt
+
+# Выносим один из файлов из отслеживаемой зоны
+git reset file1.txt
+
+# Делаем первый коммит
+git commit -m "Добавлен файл1, файл2 в отслеживаемую зону, файл1 вынесен из отслеживаемой зоны"
+
+# Добавляем изменения второго файла в отслеживаемую зону
+git add file2.txt
+
+# Делаем второй коммит
+git commit -m "Добавлены изменения в файл2"
+
+# Выводим все коммиты на экран
+git log

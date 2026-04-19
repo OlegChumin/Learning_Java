@@ -1,0 +1,37 @@
+String someSting = "Some text";
+char someChar = 'D';
+" - double quote
+' - single quote
+ = - equals
+ ; - semicolon
+ : - colon
+ :: - double colon
+ != - NOT
+ ! - exclamation mark
+ ? - question mark
+ main(String[] args) ...
+ () - parentheses
+ [] - square brackets
+ public class Test{
+ }
+ {} - curly brackets
+ / - slash
+ \ - backslash
+ * - asterisk
+ & - ampersand (if (a & b ))
+ @ - at symbol (email@domain.com)
+ || - logical OR (if (a || b))
+
+ + - plus
+ - minus
+ * multiply (7 * 7 = 49)
+ < - less than (1 < 2)
+ > - bigger than (5 > 3)
+
+ 6 / 3 = 2, 7 /2 = 3 (rest 1 is dropping)  - integer division
+ 2^2 - exponentiation - in Java power (Math.pow(2, 2))
+ logarithm
+ square root
+
+ git
+

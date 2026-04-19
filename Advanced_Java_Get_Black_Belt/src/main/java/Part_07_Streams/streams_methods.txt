@@ -1,0 +1,59 @@
+Sure, here is a list of some common methods of the Stream interface in Java:
+
+filter(Predicate<T> predicate): Returns a stream consisting of the elements that match the given predicate.
+
+map(Function<T,R> mapper): Returns a stream consisting of the results of applying the given function to the elements of
+the original stream.
+
+flatMap(Function<T, Stream<R>> mapper): Returns a stream consisting of the results of applying the given function to
+the elements of the original stream and then flattening the resulting streams into one stream.
+
+sorted(): Returns a stream consisting of the elements of the original stream in sorted order.
+
+distinct(): Returns a stream consisting of the distinct elements of the original stream.
+
+peek(Consumer<T> action): Returns a stream consisting of the elements of the original stream, with an action performed
+on each element as they are consumed from the resulting stream.
+
+forEach(Consumer<T> action): Performs an action for each element of the stream.
+
+count(): Returns the number of elements in the stream.
+
+findFirst(): Returns an Optional describing the first element of the stream, or an empty Optional if the stream is empty.
+
+reduce(T identity, BinaryOperator<T> accumulator): Combines all elements of the stream using a provided identity value
+and an accumulator function, and returns an Optional describing the reduced value, if any.
+
+Please note that this is not an exhaustive list, there are other methods available, like: min, max, allMatch, anyMatch,
+noneMatch, collect, toArray and so on.
+
+Sure, here is a list of additional methods of the Stream interface in Java that I didn't mention in my previous message:
+
+min(Comparator<T> comparator): Returns an Optional describing the minimum element of the stream according to the
+provided comparator, or an empty Optional if the stream is empty.
+
+max(Comparator<T> comparator): Returns an Optional describing the maximum element of the stream according to the
+provided comparator, or an empty Optional if the stream is empty.
+
+allMatch(Predicate<T> predicate): Returns true if all elements of the stream match the given predicate, otherwise false.
+
+anyMatch(Predicate<T> predicate): Returns true if any element of the stream matches the given predicate, otherwise false.
+
+noneMatch(Predicate<T> predicate): Returns true if no elements of the stream match the given predicate, otherwise false.
+
+collect(Collector<T,A,R> collector): Performs a mutable reduction operation on the elements of the stream using a
+Collector.
+
+toArray(): Returns an array containing the elements of the stream.
+
+parallel(): Returns a parallel stream consisting of the elements of this stream.
+
+sequential(): Returns a sequential stream consisting of the elements of this stream.
+
+unordered(): Returns an unordered stream consisting of the elements of this stream.
+
+onClose(Runnable closeHandler) : Returns a stream with a close handler.
+
+close(): Closes this stream and releases any resources associated with it.
+
+Please note that this is not an exhaustive list, some other methods might exist depending on the implementation.
