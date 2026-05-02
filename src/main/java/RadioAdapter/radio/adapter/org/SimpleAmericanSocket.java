@@ -18,5 +18,6 @@ class SimpleAmericanSocket implements AmericanSocket {
     @Override
     public void getPower() {
         log.info("get 110 volt");
+        DemoPacing.pause(DemoPacing.SHORT_DELAY_MS);
     }
 }

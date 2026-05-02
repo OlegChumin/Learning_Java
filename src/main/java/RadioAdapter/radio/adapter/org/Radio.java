@@ -32,9 +32,11 @@ class Radio {
      */
     public void listenMusic(EuroSocket euroSocket) {
         log.info("Подключение радио к розетке EuroSocket...");
+        DemoPacing.pause(DemoPacing.SHORT_DELAY_MS);
         euroSocket.getPower();
 
         log.info("Питание получено, начинаем воспроизведение музыки из файла: {}", audioFile);
+        DemoPacing.pause(DemoPacing.MEDIUM_DELAY_MS);
         WavPlayer player = new WavPlayer(audioFile);
         player.play();
         log.info("Воспроизведение завершено.");
