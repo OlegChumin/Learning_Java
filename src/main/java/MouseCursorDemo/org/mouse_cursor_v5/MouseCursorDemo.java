@@ -1,4 +1,4 @@
-package org.mouse_cursor_v5;
+package MouseCursorDemo.org.mouse_cursor_v5;
 
 import javax.swing.*;
 import java.awt.*;

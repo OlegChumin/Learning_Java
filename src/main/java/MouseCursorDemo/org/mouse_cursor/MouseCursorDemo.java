@@ -1,4 +1,4 @@
-package org.mouse_cursor_v2;
+package MouseCursorDemo.org.mouse_cursor;
 
 import java.awt.AWTException;
 import java.awt.Color;
@@ -24,17 +24,6 @@ public class MouseCursorDemo {
         // Функция для рисования круга
         drawCircle(robot, redCircleX, redCircleY, circleRadius, redColor);
         drawCircle(robot, blueCircleX, blueCircleY, circleRadius, blueColor);
-
-        // Создаем отдельный поток для проверки завершения программы пользователем
-        Thread exitThread = new Thread(() -> {
-            try {
-                Thread.sleep(5000); // Ожидаем 5 секунд
-                System.out.println("Для закрытия программы нажмите Ctrl+C");
-            } catch (InterruptedException e) {
-                // Прерывание потока
-            }
-        });
-        exitThread.start();
 
         // Перемещаем курсор мыши между кругами
         while (true) {

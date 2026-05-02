@@ -1,7 +1,5 @@
 package Java_405_lessons.Patterns.Pattern_08_Facade;
 
-import org.apache.logging.log4j.core.appender.mom.jeromq.JeroMqManager;
-
 public class FacadePatternLesson {
     public static void main(String[] args) {
         LivingRoom livingRoom = new LivingRoom();
