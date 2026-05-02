@@ -29,23 +29,32 @@ public class ListenRadio {
      */
     public static void main(String[] args) {
         log.info("=== Запуск демо паттерна 'Адаптер' ===");
+        DemoPacing.pause(DemoPacing.MEDIUM_DELAY_MS);
 
         // 1. Имеем американскую розетку 110В
-        log.info("Создаём американскую розетку (SimpleAmericanSocket)...");
+        log.info("Шаг 1/4. Создаём американскую розетку (SimpleAmericanSocket)...");
+        DemoPacing.pause(DemoPacing.SHORT_DELAY_MS);
         AmericanSocket americanSocket = new SimpleAmericanSocket();
         americanSocket.getPower();
+        DemoPacing.pause(DemoPacing.MEDIUM_DELAY_MS);
 
         // 2. Преобразуем её в европейскую 220В через адаптер
-        log.info("Подключаем адаптер (SocketAdapter) для преобразования 110В -> 220В...");
+        log.info("Шаг 2/4. Подключаем адаптер (SocketAdapter) для преобразования 110В -> 220В...");
+        DemoPacing.pause(DemoPacing.SHORT_DELAY_MS);
         EuroSocket euroSocket = new SocketAdapter(americanSocket);
+        DemoPacing.pause(DemoPacing.MEDIUM_DELAY_MS);
 
         // 3. Подключаем радио, которое работает только от EuroSocket
-        log.info("Создаём радио с файлом: {}", DEFAULT_AUDIO_FILE);
+        log.info("Шаг 3/4. Создаём радио с файлом: {}", DEFAULT_AUDIO_FILE);
+        DemoPacing.pause(DemoPacing.SHORT_DELAY_MS);
         Radio radio = new Radio(DEFAULT_AUDIO_FILE);
+        DemoPacing.pause(DemoPacing.MEDIUM_DELAY_MS);
 
-        log.info("Подключаем радио к EuroSocket через адаптер...");
+        log.info("Шаг 4/4. Подключаем радио к EuroSocket через адаптер...");
+        DemoPacing.pause(DemoPacing.SHORT_DELAY_MS);
         radio.listenMusic(euroSocket);
 
+        DemoPacing.pause(DemoPacing.SHORT_DELAY_MS);
         log.info("=== Демонстрация завершена ===");
     }
 }

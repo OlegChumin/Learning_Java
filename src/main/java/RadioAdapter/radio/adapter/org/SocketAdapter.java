@@ -19,7 +19,9 @@ class SocketAdapter implements EuroSocket {
      */
     public SocketAdapter(AmericanSocket americanSocket) {
         log.info("Получен американский источник питания (110В).");
+        DemoPacing.pause(DemoPacing.SHORT_DELAY_MS);
         log.info("Выполняем преобразование напряжения: 110В -> 220В.");
+        DemoPacing.pause(DemoPacing.MEDIUM_DELAY_MS);
     }
 
     /**
@@ -28,5 +30,6 @@ class SocketAdapter implements EuroSocket {
     @Override
     public void getPower() {
         log.info("Выдаём питание 220В (адаптер).");
+        DemoPacing.pause(DemoPacing.SHORT_DELAY_MS);
     }
 }
