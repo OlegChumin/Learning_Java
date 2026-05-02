@@ -1,21 +1,8 @@
 package Graphics_Functions;
 
-import javax.swing.*;
-import java.awt.*;
-
-/**
- * Класс PlotLabels наследует класс JPanel и предназначен для добавления текстовых меток к графику.
- *
- * public class PlotLabels extends JPanel { - объявление класса PlotLabels, который наследует класс JPanel.
- * public PlotLabels() { - объявление конструктора класса PlotLabels.
- * setLayout(null); - устанавливает менеджер компоновки для панели в null.
- * JLabel sinLabel = new JLabel("sin(x)"); - создание объекта JLabel с текстом "sin(x)" и сохранение его в переменной
- * sinLabel.
- * sinLabel.setForeground(Color.RED); - установка красного цвета для текста метки sinLabel.
- * sinLabel.setBounds(50, 50, 100, 20); - задание координат и размеров метки sinLabel на панели.
- * add(sinLabel); - добавление метки sinLabel на панель.
- * Аналогично создаются метки для функций cos(x), tan(x) и ctg(x).
- * */
+import java.awt.Color;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
 
 public class PlotLabels extends JPanel {
     public PlotLabels() {

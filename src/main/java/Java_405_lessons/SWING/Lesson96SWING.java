@@ -1,9 +1,11 @@
 package Java_405_lessons.SWING;
 
-import javax.swing.*;
-import java.awt.*;
+import java.awt.Dimension;
+import java.awt.HeadlessException;
+import java.awt.Toolkit;
 import java.util.Calendar;
 import java.util.Date;
+import javax.swing.JFrame;
 
 public class Lesson96SWING {
     public static void main(String[] args) {

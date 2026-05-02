@@ -16,7 +16,8 @@ package SWING.sin_cos_tan_ctg_graphics.plot_functions;
  * линии длиной 0 пикселей.
  */
 
-import java.awt.*;
+import java.awt.Color;
+import java.awt.Graphics2D;
 import java.awt.geom.Line2D;
 import java.awt.geom.Path2D;
 

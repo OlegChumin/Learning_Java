@@ -1,6 +1,6 @@
 package EKIDS.Lessons.Lesson09.SWING;
 
-import javax.swing.*;
+import javax.swing.JFrame;
 
 public class NewWindow extends JFrame {
     public NewWindow() {

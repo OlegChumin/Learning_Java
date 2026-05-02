@@ -1,4 +1,4 @@
-package ru.chumin.mp3_player;
+package Mp3Player.ru.chumin.mp3_player;
 
 /**
  * Строка кода javax.swing.SwingUtilities.invokeLater(new Runnable() {...}); используется в

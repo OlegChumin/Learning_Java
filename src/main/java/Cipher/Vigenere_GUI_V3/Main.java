@@ -1,6 +1,6 @@
 package Cipher.Vigenere_GUI_V3;
 
-import javax.swing.*;
+import javax.swing.SwingUtilities;
 
 public class Main {
     public static void main(String[] args) {

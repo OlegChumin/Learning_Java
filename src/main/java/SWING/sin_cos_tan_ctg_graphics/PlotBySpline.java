@@ -1,11 +1,20 @@
 package SWING.sin_cos_tan_ctg_graphics;
 
-import SWING.sin_cos_tan_ctg_graphics.plot_functions.*;
-
-import javax.swing.*;
-import java.awt.*;
+import SWING.sin_cos_tan_ctg_graphics.plot_functions.CosGraph;
+import SWING.sin_cos_tan_ctg_graphics.plot_functions.CtgGraph;
+import SWING.sin_cos_tan_ctg_graphics.plot_functions.LogGraph;
+import SWING.sin_cos_tan_ctg_graphics.plot_functions.SinGraph;
+import SWING.sin_cos_tan_ctg_graphics.plot_functions.TanGraph;
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.RenderingHints;
 import java.awt.geom.Line2D;
 import java.awt.geom.Path2D;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 public class PlotBySpline extends JFrame {
 

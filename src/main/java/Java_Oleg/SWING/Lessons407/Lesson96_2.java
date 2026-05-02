@@ -1,7 +1,8 @@
 package Java_Oleg.SWING.Lessons407;
 
-import javax.swing.*;
-import java.awt.*;
+import java.awt.Dimension;
+import java.awt.Toolkit;
+import javax.swing.JFrame;
 
 public class Lesson96_2 {
     public static final int WINDOW_WIDTH = 500; // pixels

@@ -1,17 +1,12 @@
 package Cipher.Students_code;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Scanner;
 
-//        Надо написать алгоритм шифрования Виженера (язык и алфавиты бери английский без знаков только буквы и только заглавные.
-//        Оформление ввода-вывода в консоли.
-//        Требования:
-//        - Исходные сообщения считываются с файлов.
-//        - Должна быть реализована возможность считывания и записи из/в файлы
-//        - ввод и вывод осуществляется в консоли
-//        - программа должна уметь получить путь к исходному файлу с зашифрованным сообщением, расшифровать его вывести на экран и записать результат в файл.
 public class Cipher_Source {
     public static void main(String[] args) throws IOException {
         boolean again = true;

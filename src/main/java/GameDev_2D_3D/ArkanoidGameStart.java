@@ -1,10 +1,13 @@
 package GameDev_2D_3D;
 
-import javax.swing.*;
-import java.awt.*;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.RenderingHints;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 
-
-// Base from: http://www.edu4java.com/en/game/game1.html
 @SuppressWarnings("serial")
 public class ArkanoidGameStart extends JPanel { //создаем класс и наследуемся от JPanel
 	public static final int WIDTH = 410;

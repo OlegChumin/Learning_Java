@@ -1,9 +1,15 @@
 package Java_405_lessons.SWING;
 
-import javax.swing.*;
-import java.awt.*;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Image;
+import java.awt.Toolkit;
 import java.net.MalformedURLException;
 import java.net.URL;
+import javax.swing.ImageIcon;
+import javax.swing.JComponent;
+import javax.swing.JFrame;
 
 public class LessonSWING022 {
     public static void main(String[] args) {

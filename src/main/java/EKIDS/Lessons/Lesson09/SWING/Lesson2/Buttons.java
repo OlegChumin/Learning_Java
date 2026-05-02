@@ -1,6 +1,10 @@
 package EKIDS.Lessons.Lesson09.SWING.Lesson2;
 
-import javax.swing.*;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.WindowConstants;
 
 public class Buttons extends JFrame{
     JPanel pnl = new JPanel();

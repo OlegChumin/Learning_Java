@@ -1,7 +1,8 @@
 package GameDev_2D_3D;
 
-import java.awt.*;
-
+import java.awt.Color;
+import java.awt.Graphics2D;
+import java.awt.Rectangle;
 
 public class Ball {
 	public static int DIAMETER = 10;

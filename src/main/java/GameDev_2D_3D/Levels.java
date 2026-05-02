@@ -1,8 +1,6 @@
 package GameDev_2D_3D;
 
-import java.awt.*;
-
-
+import java.awt.Color;
 
 public class Levels {
 	public static int current_level = 1;

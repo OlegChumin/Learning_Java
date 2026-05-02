@@ -1,9 +1,9 @@
 package BallThreadsRace.ball_race_v_003;
 
-import javax.swing.*;
-import java.awt.*;
+import java.awt.Graphics;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
 
-// Определение класса BallRace, который наследует от JFrame
 public class BallRace extends JFrame {
     // Определение необходимых статических полей для работы программы
 // Константа, определяющая длину трассы (500 пикселей)

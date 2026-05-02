@@ -1,4 +1,4 @@
-package ru.chumin.mp3_player;
+package Mp3Player.ru.chumin.mp3_player;
 
 import javax.swing.*;
 import java.awt.*;
@@ -8,7 +8,7 @@ import java.awt.event.MouseEvent;
 public class GraphicsUserInterface extends JFrame { // Наследуем класс от JFrame для создания оконного приложения
     private final Mp3Player MP3_PLAYER; // Объявляем переменную для работы с mp3 плеером
 
-    private final String FILE_PATH = "src/main/resources/Dj Power - Popcorn.mp3";
+    private final String FILE_PATH = "src/main/resources/Mp3Player/Dj Power - Popcorn.mp3";
 
     public GraphicsUserInterface() { // Конструктор класса
         super("Oleg Chumin - Mp3 Graphics Music Player"); // Вызываем конструктор базового класса JFrame, устанавливая заголовок окна

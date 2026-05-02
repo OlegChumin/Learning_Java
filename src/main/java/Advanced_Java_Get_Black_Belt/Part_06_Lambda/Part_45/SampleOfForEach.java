@@ -1,6 +1,10 @@
 package Advanced_Java_Get_Black_Belt.Part_06_Lambda.Part_45;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Random;
 
 public class SampleOfForEach {
     private static Random random = new Random();

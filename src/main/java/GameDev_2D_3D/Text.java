@@ -1,7 +1,10 @@
 package GameDev_2D_3D;
 
-import javax.swing.*;
-import java.awt.*;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Graphics2D;
+import javax.swing.JLabel;
+import javax.swing.SwingConstants;
 
 public class Text {
 	public static int menu_bar_height = 25;

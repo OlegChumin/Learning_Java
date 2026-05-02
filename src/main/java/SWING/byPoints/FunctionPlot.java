@@ -1,8 +1,13 @@
 package SWING.byPoints;
 
-import javax.swing.*;
-import java.awt.*;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.RenderingHints;
 import java.awt.geom.Line2D;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 public class FunctionPlot extends JFrame {
 

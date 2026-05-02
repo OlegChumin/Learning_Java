@@ -1,6 +1,6 @@
 package Java_Oleg.SWING.Lessons407;
 
-import javax.swing.*;
+import javax.swing.JFrame;
 
 public class Lesson96 {
     public static void main(String[] args) {

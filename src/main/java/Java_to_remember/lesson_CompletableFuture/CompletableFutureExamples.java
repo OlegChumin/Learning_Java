@@ -1,6 +1,7 @@
 package Java_to_remember.lesson_CompletableFuture;
 
 import java.util.List;
+import java.util.Arrays;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
@@ -37,7 +38,7 @@ public class CompletableFutureExamples {
         System.out.println("Сумма 10 + 20 = " + sumFuture.get());
 
         // Пример 3: Сбор результатов нескольких асинхронных задач
-        List<CompletableFuture<String>> tasks = List.of(
+        List<CompletableFuture<String>> tasks = Arrays.asList(
                 CompletableFuture.supplyAsync(() -> slowTask("Task 1", 1)),
                 CompletableFuture.supplyAsync(() -> slowTask("Task 2", 2)),
                 CompletableFuture.supplyAsync(() -> slowTask("Task 3", 1))

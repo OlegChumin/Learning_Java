@@ -1,7 +1,13 @@
 package BallThreadsRace.ball_race_v_001;
 
-import java.awt.*;
-import java.util.*;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Point;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class Ball implements Runnable, Comparable<Ball> {
     static final int MAX_SPEED = 10;

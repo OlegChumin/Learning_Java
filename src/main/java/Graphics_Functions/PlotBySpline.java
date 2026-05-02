@@ -1,11 +1,20 @@
 package Graphics_Functions;
 
-import Graphics_Functions.plot_functions.*;
-
-import javax.swing.*;
-import java.awt.*;
+import Graphics_Functions.plot_functions.CosGraph;
+import Graphics_Functions.plot_functions.CtgGraph;
+import Graphics_Functions.plot_functions.LogGraph;
+import Graphics_Functions.plot_functions.SinGraph;
+import Graphics_Functions.plot_functions.TanGraph;
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.RenderingHints;
 import java.awt.geom.Line2D;
 import java.awt.geom.Path2D;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 public class PlotBySpline extends JFrame {
 

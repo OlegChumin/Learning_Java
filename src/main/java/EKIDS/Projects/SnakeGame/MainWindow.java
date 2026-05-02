@@ -1,9 +1,10 @@
 package EKIDS.Projects.SnakeGame;
 
-import javax.swing.*;
+import javax.swing.JFrame;
+import javax.swing.WindowConstants;
 
 /**
- SWING
+ * Главное окно игры "Змейка" на Swing.
  */
 public class MainWindow extends JFrame {
     public MainWindow() {

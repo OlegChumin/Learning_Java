@@ -1,7 +1,10 @@
 package Alishev_Based_And_Advanced_Java;
 
 import Alishev_Based_And_Advanced_Java.Advanced_Java.Part_07_TestingWithJUnit_037_039.Vector2D;
-import org.junit.*;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Ignore;
+import org.junit.Test;
 
 public class Vector2DТNewTest {
     private final double EPS = 1e-9;

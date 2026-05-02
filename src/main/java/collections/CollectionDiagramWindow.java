@@ -1,6 +1,5 @@
 package collections;// CollectionDiagramWindow.java
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.JFrame;
 
 public class CollectionDiagramWindow extends JFrame {
     public CollectionDiagramWindow() {

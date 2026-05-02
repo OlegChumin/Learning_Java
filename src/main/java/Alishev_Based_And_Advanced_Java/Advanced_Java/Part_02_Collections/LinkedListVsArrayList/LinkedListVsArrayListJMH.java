@@ -1,36 +1,19 @@
 package Alishev_Based_And_Advanced_Java.Advanced_Java.Part_02_Collections.LinkedListVsArrayList;
 
-import org.openjdk.jmh.annotations.*;
-
+import org.openjdk.jmh.annotations.Benchmark;
+import org.openjdk.jmh.annotations.BenchmarkMode;
+import org.openjdk.jmh.annotations.Level;
+import org.openjdk.jmh.annotations.Mode;
+import org.openjdk.jmh.annotations.OutputTimeUnit;
+import org.openjdk.jmh.annotations.Param;
+import org.openjdk.jmh.annotations.Scope;
+import org.openjdk.jmh.annotations.Setup;
+import org.openjdk.jmh.annotations.State;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Бенчмарк для сравнения производительности ArrayList и LinkedList
- * по следующим операциям:
- * <ul>
- *     <li>добавление в конец</li>
- *     <li>добавление в начало</li>
- *     <li>получение по индексу</li>
- *     <li>удаление из начала</li>
- * </ul>
- * Используется фреймворк JMH.
- *
- * To start measuring benchmark: run BenchmarkRunner or in terminal (PowerShell)
- * mvn clean install
- * mvn exec:exec -Dexec.mainClass=org.openjdk.jmh.Main
- *
- * @BenchmarkMode(Mode.AverageTime) измеряется среднее время выполнения
- * @OutputTimeUnit(TimeUnit.MILLISECONDS) единица измерения — миллисекунды
- * @State(Scope.Thread) каждый поток бенчмарка использует собственный экземпляр класса
- * ускорить
- * @Warmup(iterations = 1, time = 2) прогрев: 1 итерация по 2 секунды
- * @Measurement(iterations = 2, time = 2) измерения: 2 итерации по 2 секунды
- * @Fork(1)   запускать один отдельный процесс JVM
- * добавить к аннотациям класса
- */
 @BenchmarkMode(Mode.AverageTime)
 @OutputTimeUnit(TimeUnit.MILLISECONDS)
 @State(Scope.Thread)

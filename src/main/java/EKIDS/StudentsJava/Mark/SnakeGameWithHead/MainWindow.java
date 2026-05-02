@@ -1,10 +1,7 @@
 package EKIDS.StudentsJava.Mark.SnakeGameWithHead;
 
-import javax.swing.*;
-
-/**
- * SWING
- */
+import javax.swing.JFrame;
+import javax.swing.WindowConstants;
 
 public class MainWindow extends JFrame {
     public MainWindow() {

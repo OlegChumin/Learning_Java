@@ -1,6 +1,7 @@
 package Graphics_Functions.plot_functions;
 
-import java.awt.*;
+import java.awt.Color;
+import java.awt.Graphics2D;
 import java.awt.geom.Path2D;
 
 public class LogGraph {

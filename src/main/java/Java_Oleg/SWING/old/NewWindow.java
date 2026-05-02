@@ -1,11 +1,7 @@
 package Java_Oleg.SWING.old;
 
-import javax.swing.*;
+import javax.swing.JFrame;
 
-/**
- * SWING для создания desktop приложений
- * AWT (нативное отображение через ОС) -> SWING (собственная прорисовка)
- * */
 public class NewWindow extends JFrame{
 
     public NewWindow(){

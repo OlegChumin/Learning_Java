@@ -1,6 +1,9 @@
 package Hello_World.materials.gleb;
 
-import javax.swing.*;
+import javax.swing.JFrame;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import javax.swing.SwingUtilities;
 
 public class BigTextDisplay {
     public static void main(String[] args) {

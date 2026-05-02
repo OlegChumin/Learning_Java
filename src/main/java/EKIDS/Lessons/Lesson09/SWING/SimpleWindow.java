@@ -1,7 +1,8 @@
 package EKIDS.Lessons.Lesson09.SWING;
 
-import javax.swing.*;
-import java.awt.*;
+import java.awt.Dimension;
+import java.awt.Toolkit;
+import javax.swing.JFrame;
 
 public class SimpleWindow {
     public static void main(String[] args) {

@@ -1,23 +1,17 @@
 package Cipher.Students_code;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Scanner;
 
 /**
- Внесенные изменения:
-
- Заменены круглые скобки в конструкции while на просто true.
- Помещение булевского значения true в do-while заменено на просто while(true).
- Опечатки исправлены.
- Добавлены пробелы вокруг операторов.
- Исправлено форматирование кода и опечатки. В частности, исправлено:
- Опечатка в названии переменной originalMessage.
- Неправильно написанная условная конструкция в цикле do-while.
- Исправлено условие выхода из цикла do-while.
- Добавлено закрытие потока write_out после его использования.
-
+ * Исправленная версия учебного шифратора.
+ * <p>
+ * В этой версии были исправлены опечатки, форматирование,
+ * логика повторного запуска и работа с файлами.
  */
 
 public class Cipher {
@@ -46,10 +40,11 @@ public class Cipher {
                     crypto.write(encryptedMessage);
                     crypto.close();
 
-                    Scanner write_out = new Scanner(cryptedFile); // message out
-                    System.out.println("Encrypted message: ");
-                    while (write_out.hasNextLine()) {
-                        System.out.println(write_out.nextLine());
+                    try (Scanner writeOut = new Scanner(cryptedFile)) {
+                        System.out.println("Encrypted message: ");
+                        while (writeOut.hasNextLine()) {
+                            System.out.println(writeOut.nextLine());
+                        }
                     }
                     break;
                 case "Decrypt":

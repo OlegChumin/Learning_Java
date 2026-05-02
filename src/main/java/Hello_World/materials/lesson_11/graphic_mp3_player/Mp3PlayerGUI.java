@@ -1,9 +1,11 @@
 package Hello_World.materials.lesson_11.graphic_mp3_player;
 
-import javax.swing.*; // Импортируем библиотеку Swing для работы с графическим интерфейсом
-import java.awt.*; // Импортируем классы для работы с элементами интерфейса и их расположением
-import java.awt.event.MouseAdapter; // Импортируем класс для создания слушателя мыши
-import java.awt.event.MouseEvent; // Импортируем класс для работы с событиями мыши
+import java.awt.Cursor;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 public class Mp3PlayerGUI extends JFrame { // Наследуем класс от JFrame для создания оконного приложения
     private Mp3Player mp3Player; // Объявляем переменную для работы с mp3 плеером

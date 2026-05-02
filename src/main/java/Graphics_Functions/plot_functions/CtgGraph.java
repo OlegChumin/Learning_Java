@@ -16,7 +16,8 @@ package Graphics_Functions.plot_functions;
  * линии длиной 0 пикселей.
  */
 
-import java.awt.*;
+import java.awt.Color;
+import java.awt.Graphics2D;
 import java.awt.geom.Line2D;
 
 public class CtgGraph {

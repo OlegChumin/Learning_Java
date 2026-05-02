@@ -1,9 +1,13 @@
 package Java_Oleg.SWING.Lessons407;
 
-import javax.swing.*;
-import java.awt.*;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 public class Lesson98 {
     public static final int WINDOW_WIDTH = 800; // pixels

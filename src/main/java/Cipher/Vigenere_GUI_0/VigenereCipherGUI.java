@@ -1,26 +1,29 @@
 package Cipher.Vigenere_GUI_0;
 
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
+import java.awt.BorderLayout;
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import javax.swing.BorderFactory;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
 
 /**
- Этот код создает графический интерфейс, который состоит из трех панелей: панель ввода, панель вывода и панель для
- ввода ключа. Пользователь может ввести текст, выбрать ключ и нажать кнопку "Encrypt" или "Decrypt", чтобы зашифровать
- или расшифровать текст. Результат выводится в текстовом поле на панели вывода.
-
- Также в классе есть два метода readFromFile и writeToFile, которые используются для чтения входных данных из файла и
- записи выходных данных в файл соответственно.
-
- Методы encrypt и decrypt в этом классе почти идентичны методам в оригинальном классе VigenereCipher, за исключением
- того, что вместо чтения и записи в файлы они используют текст, введенный пользователем через графический интерфейс, и
- отображают результаты на панели вывода.
- * */
+ * Графический интерфейс для шифра Виженера.
+ * <p>
+ * Окно содержит панели ввода, вывода и поле для ключа.
+ * Пользователь может ввести текст, задать ключ и
+ * зашифровать или расшифровать сообщение.
+ */
 
 public class VigenereCipherGUI extends JFrame {
     private final String ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";

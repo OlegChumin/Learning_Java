@@ -1,8 +1,10 @@
 package Graphics_Functions.plot_functions;
 
-import javax.swing.*;
-import java.awt.*;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.geom.Path2D;
+import javax.swing.JPanel;
 
 public class SinGraph extends JPanel {
     // Поля класса: ширина и высота

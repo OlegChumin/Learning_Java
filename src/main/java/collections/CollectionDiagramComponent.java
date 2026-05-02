@@ -1,6 +1,6 @@
 package collections;// CollectionDiagramComponent.java
-import javax.swing.*;
-import java.awt.*;
+import java.awt.Graphics;
+import javax.swing.JComponent;
 
 public class CollectionDiagramComponent extends JComponent {
     @Override

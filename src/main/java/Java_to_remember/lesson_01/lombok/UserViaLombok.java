@@ -1,15 +1,16 @@
 package Java_to_remember.lesson_01.lombok;
 
-
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NonNull;
+import lombok.Setter;
+import lombok.ToString;
 
 /**
- * @NoArgsConstructor
- *
- @RequiredArgsConstructor for final and @NonNull
+ * Sample Lombok model.
  *
  */
-
 @Getter
 @Setter
 @ToString

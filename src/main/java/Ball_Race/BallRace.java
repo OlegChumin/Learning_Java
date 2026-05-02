@@ -1,8 +1,15 @@
-package with_Chat_GPT.Version_05;
+package Ball_Race;
 
-import java.awt.*;
-import java.util.*;
-import javax.swing.*;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Point;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
+import java.util.Set;
+import java.util.TreeSet;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 public class BallRace extends JFrame {
     private static final long serialVersionUID = 1L;

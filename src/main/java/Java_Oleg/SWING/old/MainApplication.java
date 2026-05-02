@@ -1,7 +1,9 @@
 package Java_Oleg.SWING.old;
 
-import javax.swing.*;
-import java.awt.*;
+import java.awt.Color;
+import java.awt.Image;
+import javax.swing.ImageIcon;
+import javax.swing.JPanel;
 
 public class MainApplication extends JPanel {
     public Image iconImg;

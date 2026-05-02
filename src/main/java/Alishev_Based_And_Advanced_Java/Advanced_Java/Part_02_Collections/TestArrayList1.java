@@ -1,6 +1,10 @@
 package Alishev_Based_And_Advanced_Java.Advanced_Java.Part_02_Collections;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Random;
 
 import static java.lang.Math.random;
 

@@ -1,6 +1,9 @@
 package Advanced_Java_Get_Black_Belt.Part_02_Interfaces_Comparable_and_Comparator.Comparator;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 public class SamplesOfComparatorInterfaceUsage {
     public static void main(String[] args) {

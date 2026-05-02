@@ -1,8 +1,12 @@
 package Java_405_lessons.SWING;
 
-import javax.swing.*;
-import java.awt.*;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.GraphicsEnvironment;
+import java.awt.HeadlessException;
+import java.awt.Toolkit;
 import java.util.Arrays;
+import javax.swing.JFrame;
 
 public class Lesson97SWING {
     public static void main(String[] args) {

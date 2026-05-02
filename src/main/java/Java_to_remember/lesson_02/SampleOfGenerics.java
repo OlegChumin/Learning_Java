@@ -1,6 +1,5 @@
 package Java_to_remember.lesson_02;
 
-import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 

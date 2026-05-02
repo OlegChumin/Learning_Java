@@ -1,4 +1,4 @@
-package ru.chumin.mp3_player;
+package Mp3Player.ru.chumin.mp3_player;
 
 import javazoom.jl.decoder.JavaLayerException;
 import javazoom.jl.player.Player;

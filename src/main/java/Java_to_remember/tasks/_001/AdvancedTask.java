@@ -45,6 +45,6 @@ public class AdvancedTask {
                 .filter(e -> e.name.startsWith("J"))
                 .mapToDouble(employee -> employee.salary)
                 .average()
-                .orElseThrow();
+                .orElseThrow(() -> new IllegalArgumentException("No employees found with name starting with J"));
     }
 }

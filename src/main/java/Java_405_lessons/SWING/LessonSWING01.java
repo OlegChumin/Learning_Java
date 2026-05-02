@@ -1,8 +1,7 @@
 package Java_405_lessons.SWING;
 
-import javax.swing.*;
-import java.awt.*;
 import java.awt.image.ImageProducer;
+import javax.swing.JFrame;
 
 public class LessonSWING01 { // в AWT было нативное, через операционную систему создание оболочек и элементов
     public static void main(String[] args) {

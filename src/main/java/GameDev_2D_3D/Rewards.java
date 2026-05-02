@@ -1,9 +1,10 @@
 package GameDev_2D_3D;
 
-import java.awt.*;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Graphics2D;
+import java.awt.Rectangle;
 import java.util.ArrayList;
-
-
 
 public class Rewards {
 	public static int ultraball_time = 10;

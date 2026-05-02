@@ -1,6 +1,10 @@
 package BallThreadsRace.ball_race_v_003;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.NoSuchElementException;
+import java.util.Random;
 
 class BallColorManager {
     private static final List<BallColor> availableColors = new ArrayList<>();
