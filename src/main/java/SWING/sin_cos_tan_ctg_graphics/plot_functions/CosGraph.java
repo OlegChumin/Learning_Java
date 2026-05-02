@@ -6,7 +6,8 @@ package SWING.sin_cos_tan_ctg_graphics.plot_functions;
  * CosGraph и вызвать метод draw() внутри метода paintComponent().
  * */
 
-import java.awt.*;
+import java.awt.Color;
+import java.awt.Graphics2D;
 import java.awt.geom.Path2D;
 import javax.swing.JPanel;
 

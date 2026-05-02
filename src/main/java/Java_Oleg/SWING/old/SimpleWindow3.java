@@ -1,7 +1,8 @@
 package Java_Oleg.SWING.old;
 
-import javax.swing.*;
-import java.awt.*;
+import java.awt.Dimension;
+import java.awt.Toolkit;
+import javax.swing.JFrame;
 
 public class SimpleWindow3 {
     public static void main(String[] args) {

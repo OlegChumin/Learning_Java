@@ -1,8 +1,11 @@
 package EKIDS.Lessons.Lesson09.SWING.Lesson3;
 
-import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JTextArea;
 
 public class Action extends JFrame implements ActionListener {
     JPanel pnl = new JPanel();

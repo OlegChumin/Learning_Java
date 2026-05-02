@@ -1,6 +1,6 @@
 package Java_Oleg.SWING.Images;
 
-import java.awt.*;
+import java.awt.GraphicsEnvironment;
 
 public class GetSystemFonts {
     public static void main(String[] args) {

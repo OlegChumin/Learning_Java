@@ -1,6 +1,6 @@
 package Java_Oleg.SWING.old;
 
-import javax.swing.*;
+import javax.swing.JFrame;
 
 public class SimpleWindow {
     public static void main(String[] args) {

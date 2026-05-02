@@ -1,8 +1,7 @@
 package collections;
 
-import javax.swing.*;
+import javax.swing.SwingUtilities;
 
-// CollectionDiagramApp.java
 public class CollectionDiagramApp {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> new CollectionDiagramWindow());

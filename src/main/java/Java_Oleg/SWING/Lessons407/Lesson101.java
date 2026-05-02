@@ -1,9 +1,10 @@
 package Java_Oleg.SWING.Lessons407;
 
-import javax.swing.*;
-import java.awt.*;
+import java.awt.Dimension;
+import java.awt.Toolkit;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
 
-// look-and-feel
 public class Lesson101 {
     public static final int WINDOW_WIDTH = 800; // pixels
     public static final int WINDOW_HEIGHT = 600; // pixels

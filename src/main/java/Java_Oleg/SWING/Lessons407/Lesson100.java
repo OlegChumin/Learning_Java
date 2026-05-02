@@ -1,9 +1,14 @@
 package Java_Oleg.SWING.Lessons407;
 
-import javax.swing.*;
-import java.awt.*;
+import java.awt.Dimension;
+import java.awt.Toolkit;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.UIManager;
+import javax.swing.UIManager.LookAndFeelInfo;
+import javax.swing.UnsupportedLookAndFeelException;
 
-// look-and-feel
 public class Lesson100 {
     public static final int WINDOW_WIDTH = 800; // pixels
     public static final int WINDOW_HEIGHT = 600; // pixels

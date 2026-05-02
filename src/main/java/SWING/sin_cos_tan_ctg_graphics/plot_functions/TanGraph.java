@@ -10,9 +10,11 @@ package SWING.sin_cos_tan_ctg_graphics.plot_functions;
  * this.width = width; и this.height = height; - инициализация ширины и высоты панели.
  */
 
-import javax.swing.*;
-import java.awt.*;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.geom.Path2D;
+import javax.swing.JPanel;
 
 public class TanGraph extends JPanel {
 
